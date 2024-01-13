@@ -27,11 +27,7 @@
         </div>
         <div class="mb-3 row">
             <label for="merk" class="col-sm-2 col-form-label">merk</label>
-            {{-- <select class="form-select" name="id_merk" id="id_merk">
-                @foreach ($data_merk as $item)
-                <option value="{{ $item->id }}" data-ruangan="{{ $item->id }}" >{{ $item->nama_merk }}</option>
-                @endforeach
-              </select> --}}
+            
               <div class="col-sm-10">
                 <input type="hidden" value="" readonly id="id_merk" name="id_merk">
                 <input type="text" value="" readonly id="nama_merk" name="" class="form-control">
