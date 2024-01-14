@@ -19,7 +19,7 @@ class merkController extends Controller
         $jumlahbaris = 5;
         $ruangan = ruangan::all();
         $data_merk = merk::with('ruangan')->latest()->get();
-        return view('merk.index',[
+        return view('dashboard.merk.index',[
             "tittle" => "tambah-tambah-merk"
             ], compact('data_merk','ruangan'));
     }
@@ -31,7 +31,7 @@ class merkController extends Controller
      */
     public function create()
     {
-        return view('merk.create',[
+        return view('dashboard.merk.create',[
             "tittle" => "tambah-tambah-merk"
             ],['data_ruangan'=> ruangan::all()]);
     }
@@ -89,7 +89,7 @@ class merkController extends Controller
     public function edit($id)
     {
         $data = merk::where('id',$id)->first();
-        return view('merk.edit',[
+        return view('dashboard.merk.edit',[
             "tittle" => "tambah-tambah-merk"
             ],[
                 'data_ruangan' => ruangan::all()

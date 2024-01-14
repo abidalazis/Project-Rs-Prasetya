@@ -38,7 +38,7 @@
             <label for="merk" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button></div>
         </div>
-      </form>
     </div>
+</form>
     <!-- AKHIR FORM -->
 @endsection

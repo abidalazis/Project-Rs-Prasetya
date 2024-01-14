@@ -17,7 +17,7 @@ class ruanganController extends Controller
     {
         $jumlahbaris = 5;
         $data_ruangan = ruangan::latest()->get();
-        return view('ruangan.index',[
+        return view('dashboard.ruangan.index',[
             "tittle" => "tambah-ruangan-service"
             ], compact('data_ruangan'));
     }
@@ -29,7 +29,7 @@ class ruanganController extends Controller
      */
     public function create()
     {
-        return view('ruangan.create',[
+        return view('dashboard.ruangan.create',[
             "tittle" => "tambah-ruangan-service"
             ]);
     }
@@ -82,7 +82,7 @@ class ruanganController extends Controller
     public function edit($id)
     {
         $data = ruangan::where('id',$id)->first();
-        return view('ruangan.edit',[
+        return view('dashboard.ruangan.edit',[
             "tittle" => "tambah-ruangan-service"
             ])->with('datas',$data);
     }
