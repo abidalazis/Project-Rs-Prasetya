@@ -30,7 +30,7 @@
                      </tr>
                  </thead>
                  <tbody>
-                    @foreach ($data_merk as $item)
+                    @foreach ($data as $item)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->nama_merk }}</td>

@@ -27,7 +27,7 @@
   </thead>
   <tbody>
      
-     @foreach ($data_ruangan as $item)
+     @foreach ($data as $item)
      <tr>
          <td>{{ $loop->iteration }}</td>
          <td>{{ $item->nama_ruangan }}</td>

@@ -21,19 +21,25 @@ class servicesController extends Controller
         $katakunci= $request->katakunci;
         if(strlen($katakunci)){
             $data = services::where('tanggal','like',"%$katakunci%")
-            ->orWhere('ruangan','like',"%$katakunci%")
-            ->orWhere('merk','like',"%$katakunci%")
+            ->orWhereHas('ruangan', function ($query) use ($katakunci) {
+                $query->where('nama_ruangan', 'like', '%' . $katakunci . '%');
+                })
+            ->orWhereHas('merk', function ($query) use ($katakunci) {
+                $query->where('nama_merk', 'like', '%' . $katakunci . '%');
+                })
+            // ->orWhere('','like',"%$katakunci%")
+            // ->orWhere('id_merk','like',"%$katakunci%")
             ->orWhere('status','like',"%$katakunci%")
             ->orWhere('keterangan','like',"%$katakunci%")
             ->paginate($jumlahbaris);
          } else{
-            $data_ruangan = ruangan::all();
-            $data_merk = merk::with('ruangan')->latest()->get();
-            $data = services::with('merk')->latest()->get();
+            // $data_ruangan = ruangan::all();
+            // $data_merk = merk::with('ruangan')->latest()->get();
+            $data = services::paginate($jumlahbaris);
          }
         return view('dashboard.laporan-service.index',[
             "tittle" => "tambah-laporan-service"
-            ],compact('data_merk','data_ruangan','data'));
+            ],compact('data'));
     }
 
     /**

@@ -14,14 +14,24 @@ class merkController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $jumlahbaris = 5;
-        $ruangan = ruangan::all();
-        $data_merk = merk::with('ruangan')->latest()->get();
+        $katakunci= $request->katakunci;
+        if(strlen($katakunci)){
+            $data = merk::where('nama_merk','like',"%$katakunci%")
+            ->orWhereHas('ruangan', function ($query) use ($katakunci) {
+                $query->where('nama_ruangan', 'like', '%' . $katakunci . '%');
+                })
+            ->orWhere('jenis','like',"%$katakunci%")
+            ->orWhere('keterangan','like',"%$katakunci%")
+            ->paginate($jumlahbaris);
+         } else{
+            $data = merk::with('ruangan')->latest()->get();
+         }
         return view('dashboard.merk.index',[
             "tittle" => "tambah-tambah-merk"
-            ], compact('data_merk','ruangan'));
+            ], compact('data'));
     }
 
     /** 

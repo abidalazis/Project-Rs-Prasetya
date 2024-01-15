@@ -13,13 +13,20 @@ class ruanganController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $jumlahbaris = 5;
-        $data_ruangan = ruangan::latest()->get();
+        $katakunci= $request->katakunci;
+        if(strlen($katakunci)){
+            $data = ruangan::where('nama_ruangan','like',"%$katakunci%")
+            ->orWhere('keterangan','like',"%$katakunci%")
+            ->paginate($jumlahbaris);
+         } else{
+            $data = ruangan::paginate($jumlahbaris);
+         }
         return view('dashboard.ruangan.index',[
             "tittle" => "tambah-ruangan-service"
-            ], compact('data_ruangan'));
+            ], compact('data'));
     }
 
     /**
