@@ -22,6 +22,11 @@ Route::get('/', function () {
         "tittle" => "home"
         ]);
 });
+Route::get('/indikator-mutu', function () {
+    return view('dashboard.index',[
+        "tittle" => "home"
+        ]);
+});
 Route::get('/merk/{id}',[servicesController::class,'getMerk']);
 // Route::get('/laporan-service', [servicesController::class,'index']);
 Route::resource('laporan-service',servicesController::class);
