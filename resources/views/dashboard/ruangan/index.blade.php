@@ -1,49 +1,50 @@
- @extends('dashboard.layouts.main')
-@section('container')
-
-<main class="container"> 
-
-<div class="my-3 p-3 bg-body rounded shadow-sm">
-<!-- FORM PENCARIAN -->
-   <div class="pb-3">
-    <form class="d-flex" action="/tambah-ruangan" method="get">
-        <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
-        <button class="btn btn-secondary" type="submit">Cari</button>
-    </form>
-  </div>
-  
-  <!-- TOMBOL TAMBAH DATA -->
-  <div class="pb-3">
-    <a href='/tambah-ruangan/create' class="btn btn-primary">+ Tambah Data</a>
-  </div>
-  <table class="table table-striped table-sm">
-    <thead>
-      <tr>
-          <th class="col-md-1">No</th>
-          <th class="col-md-4">Nama Ruangan</th>
-          <th class="col-md-4">Keterangan</th>
-          <th class="col-md-1">Aksi</th>
-      </tr>
-  </thead>
-  <tbody>
-     
-     @foreach ($data as $item)
-     <tr>
-         <td>{{ $loop->iteration }}</td>
-         <td>{{ $item->nama_ruangan }}</td>
-         <td>{{ $item->keterangan }}</td>
-         <td>
-             <a href="/tambah-ruangan/ {{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-             <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline" action="/tambah-ruangan/ {{$item->id}}"
-                 method="post">
-                 @csrf
-                 @method('DELETE')
-             <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>
-             </form>
-         </td>
-     </tr>       
-     @endforeach
-  </tbody>
-  </table>
-</div>
+@extends('dashboard.layouts.main')
+@section('content')
+@include('dashboard.layouts.pesan')
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Ruangan</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Ruangan</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+            <a href="{{ route('tambah-ruangan.create') }}" class="btn btn-primary">Tambah</a>
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Ruangan</th>
+                        <th>Keterangan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $item->nama_ruangan }}</td>
+                            <td>{{ $item->keterangan }}</td>
+                            <td>
+                                <a href="/tambah-ruangan/ {{ $item->id }}/edit"
+                                    class="btn btn-warning btn-sm">Edit</a>
+                                <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline"
+                                    action="/tambah-ruangan/ {{ $item->id }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>    
 @endsection
+

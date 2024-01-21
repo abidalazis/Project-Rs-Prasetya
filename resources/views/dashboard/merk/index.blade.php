@@ -1,54 +1,53 @@
 @extends('dashboard.layouts.main')
-@section('container')
-
-<main class="container">
-    
-     <!-- START DATA -->
-     <div class="my-3 p-3 bg-body rounded shadow-sm">
-             <!-- FORM PENCARIAN -->
-             <div class="pb-3">
-               <form class="d-flex" action="/tambah-merk" method="get">
-                   <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
-                   <button class="btn btn-secondary" type="submit">Cari</button>
-               </form>
-             </div>
-             
-             <!-- TOMBOL TAMBAH DATA -->
-             <div class="pb-3">
-               <a href='/tambah-merk/create' class="btn btn-primary">+ Tambah Data</a>
-             </div>
-       
-             <table class="table table-striped">
-                 <thead>
-                     <tr>
-                         <th class="col-md-1">No</th>
-                         <th class="col-md-2">Nama Merk</th>
-                         <th class="col-md-2">Nama Ruangan</th>
-                         <th class="col-md-2">Jenis</th>
-                         <th class="col-md-2">Keterangan</th>
-                         <th class="col-md-4">Aksi</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                    @foreach ($data as $item)
+@section('content')
+@include('dashboard.layouts.pesan')
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Merk</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Merk</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+            <a href="{{ route('tambah-merk.create') }}" class="btn btn-primary">Tambah</a>
+            <table id="datatablesSimple">
+                <thead>
                     <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item->nama_merk }}</td>
-                        <td>{{ optional($item->ruangan)->nama_ruangan }}</td>
-                        <td>{{ $item->jenis }}</td>
-                        <td>{{ $item->keterangan }}</td>
-                        <td>
-                            <a href="/tambah-merk/ {{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-                            <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline" action="/tambah-merk/ {{$item->id}}"
-                                method="post">
-                                @csrf
-                                @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>
-                            </form>
-                        </td>
-                    </tr>   
+                        <th>No</th>
+                        <th>Nama Merk</th>
+                        <th>Nama Ruangan</th>
+                        <th>Jenis</th>
+                        <th>Keterangan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $item->nama_merk }}</td>
+                            <td>{{ optional($item->ruangan)->nama_ruangan }}</td>
+                            <td>{{ $item->jenis }}</td>
+                            <td>{{ $item->keterangan }}</td>
+                            <td>
+                                <a href="/tambah-merk/ {{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline"
+                                    action="/tambah-merk/ {{ $item->id }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>
+                                </form>
+                            </td>
+                        </tr>
                     @endforeach
-                 </tbody>
-             </table>
-       </div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>    
 @endsection
+

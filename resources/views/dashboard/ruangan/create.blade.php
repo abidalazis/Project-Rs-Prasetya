@@ -1,6 +1,6 @@
 @extends('dashboard.layouts.main')
-@section('container')
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+@section('content')
+<div class="container-fluid px-4">
     <h1 class="h2">Tambah Kategori</h1>
 </div>
   <div class="container mt-5 mb-5">
@@ -36,23 +36,4 @@
         </div>
     </div>
 </div>
-
-{{-- <div class="col-lg-8">
-  <form method="post" action="/dashboard/kategori">
-    <div class="mb-3">
-      <label for="nama_kategori" class="form-label">Kategori</label>
-      <input type="text" class="form-control" id="nama_kategori"  name="nama_kategori" >
-    </div>
-    <div class="mb-3">
-      <label for="deskripsi" class="form-label">Deskripsi</label>
-      <input type="text" class="form-control" id="deskripsi">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Gambar</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-
-    <button type="submit" class="btn btn-primary">Tambah</button>
-  </form>
-</div> --}}
 @endsection
