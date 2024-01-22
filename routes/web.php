@@ -17,18 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('tambah-merk', merkController::class);
 Route::get('/', function () {
-    return view('home',[
-        "tittle" => "home"
-        ]);
-});
+    return view('dashboard.index');
+})->name('dashboard');
 Route::get('/indikator-mutu', function () {
-    return view('dashboard.index',[
-        "tittle" => "home"
-        ]);
-});
-Route::get('/merk/{id}',[servicesController::class,'getMerk']);
+    return view('dashboard.indikator-mutu.index');
+})->name('indikator_mutu.index');
+Route::get('/merk/{id}', [servicesController::class, 'getMerk']);
 // Route::get('/laporan-service', [servicesController::class,'index']);
-Route::resource('laporan-service',servicesController::class);
-Route::resource('tambah-ruangan',ruanganController::class);
-Route::resource('tambah-merk',merkController::class);
+Route::resource('laporan-service', servicesController::class);
+Route::resource('tambah-ruangan', ruanganController::class);
