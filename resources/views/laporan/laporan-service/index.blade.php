@@ -1,6 +1,6 @@
-@extends('dashboard.layouts.main')
+@extends('laporan.layouts.main')
 @section('content')
-@include('dashboard.layouts.pesan')
+@include('laporan.layouts.pesan')
 <div class="container-fluid px-4">
     <h1 class="mt-4">Laporan Service</h1>
     <ol class="breadcrumb mb-4">

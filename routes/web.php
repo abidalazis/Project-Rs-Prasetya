@@ -1,10 +1,12 @@
 <?php
 
-use App\Http\Controllers\merkController;
-use App\Http\Controllers\ruanganController;
-use App\Http\Controllers\servicesController;
+use App\Models\laporan;
 use App\Models\services;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\merkController;
+use App\Http\Controllers\laporanController;
+use App\Http\Controllers\ruanganController;
+use App\Http\Controllers\servicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +19,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('tambah-merk', merkController::class);
+
 Route::get('/', function () {
     return view('dashboard.index');
 })->name('dashboard');
+
+// indikator
 Route::get('/indikator-mutu', function () {
     return view('dashboard.indikator-mutu.index');
 })->name('indikator_mutu.index');
+
+// laporan
+Route::get('/laporan-it', function () {
+    return view('laporan-it.index');
+})->name('indikator_mutu.index');
+
 Route::get('/merk/{id}', [servicesController::class, 'getMerk']);
 // Route::get('/laporan-service', [servicesController::class,'index']);
+Route::resource('tambah-merk', merkController::class);
 Route::resource('laporan-service', servicesController::class);
 Route::resource('tambah-ruangan', ruanganController::class);
+
+
+Route::resource('laporan-it', laporanController::class);

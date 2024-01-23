@@ -37,7 +37,7 @@ class servicesController extends Controller
             // $data_merk = merk::with('ruangan')->latest()->get();
             $data = services::paginate($jumlahbaris);
          }
-        return view('dashboard.laporan-service.index',[
+        return view('laporan.laporan-service.index',[
             "tittle" => "tambah-laporan-service"
             ],compact('data'));
     }
@@ -49,7 +49,7 @@ class servicesController extends Controller
      */
     public function create()
     {
-        return view('dashboard.laporan-service.create',[
+        return view('laporan.laporan-service.create',[
             "tittle" => "tambah-laporan-service"
             ],[
             'data_ruangan'=> ruangan::all(),
@@ -121,9 +121,12 @@ class servicesController extends Controller
     public function edit($id)
     {
         $data = services::where('id',$id)->first();
-        return view('dashboard.laporan-service.edit',[
+        return view('laporan.laporan-service.edit',[
             "tittle" => "tambah-laporan-service"
-            ])->with('datas',$data);
+        ],[
+            'data_ruangan' => ruangan::all(),
+            'data_merk' => merk::all()
+        ])->with('datas',$data);
     }
 
     /**

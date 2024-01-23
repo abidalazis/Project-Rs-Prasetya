@@ -1,9 +1,9 @@
-@extends('dashboard.layouts.main')
+@extends('laporan.layouts.main')
 @push('select2')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
 @endpush
 @section('content')
-    <div class="container-fluid px-4">
+    <div class="container-fluid px-4 pt-4">
         <h1 class="h2">Tambah Laporan</h1>
 
     </div>
