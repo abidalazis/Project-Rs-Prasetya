@@ -13,9 +13,10 @@ class laporanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   
     public function index(Request $request)
     {
-        $jumlahbaris = 5;
+        $jumlahbaris = 10;
         $katakunci= $request->katakunci;
         if(strlen($katakunci)){
             $data = laporan_it::where('tanggal','like',"%$katakunci%")
@@ -28,12 +29,12 @@ class laporanController extends Controller
             // ->orWhere('','like',"%$katakunci%")
             // ->orWhere('id_merk','like',"%$katakunci%")
             ->orWhere('status','like',"%$katakunci%")
-            ->orWhere('keterangan','like',"%$katakunci%")
-            ->paginate($jumlahbaris);
+            ->orWhere('keterangan','like',"%$katakunci%");
+            // ->paginate($jumlahbaris);
          } else{
             // $data_ruangan = ruangan::all();
             // $data_merk = merk::with('ruangan')->latest()->get();
-            $data = laporan_it::paginate($jumlahbaris);
+            $data = laporan_it::get();
          }
         return view('laporan.laporan-it.index',[
             "tittle" => "tambah-laporan-it"

@@ -29,6 +29,7 @@ use App\Http\Controllers\servicesController;
 Route::get('/', [indikatorController::class,'index']);
 Route::get('/indikator-mutu', [indikatorController::class,'indikator_mutu']);
 Route::get('/indikator-mutu-atem', [indikatorController::class,'atem']);
+Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan']);
 
 // laporan
 Route::get('/laporan-it', function () {
@@ -43,3 +44,4 @@ Route::resource('tambah-ruangan', ruanganController::class);
 
 
 Route::resource('laporan-it', laporanController::class);
+

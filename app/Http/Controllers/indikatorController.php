@@ -23,6 +23,10 @@ class indikatorController extends Controller
     {
         return view('dashboard.indikator-mutu.atem');
     }
+    public function dashboard_laporan()
+    {
+        return view('laporan.index');
+    }
 
     
 }

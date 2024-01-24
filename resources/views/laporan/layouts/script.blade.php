@@ -7,3 +7,4 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 <script src="{{ asset('js/datatables-simple-demo.js') }}"></script>
 @stack('ajax')
+@stack('chart')
