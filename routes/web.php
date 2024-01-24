@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\indikatorController;
 use App\Models\laporan;
 use App\Models\services;
 use Illuminate\Support\Facades\Route;
@@ -20,14 +21,14 @@ use App\Http\Controllers\servicesController;
 */
 
 
-Route::get('/', function () {
-    return view('dashboard.index');
-})->name('dashboard');
+// Route::get('/', function () {
+//     return view('dashboard.index');
+// })->name('dashboard');
 
 // indikator
-Route::get('/indikator-mutu', function () {
-    return view('dashboard.indikator-mutu.index');
-})->name('indikator_mutu.index');
+Route::get('/', [indikatorController::class,'index']);
+Route::get('/indikator-mutu', [indikatorController::class,'indikator_mutu']);
+Route::get('/indikator-mutu-atem', [indikatorController::class,'atem']);
 
 // laporan
 Route::get('/laporan-it', function () {
