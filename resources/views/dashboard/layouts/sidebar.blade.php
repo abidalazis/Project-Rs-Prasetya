@@ -58,22 +58,21 @@
                         <a class="nav-link" href="/indikator-mutu-security">SECURITY</a>
                         <a class="nav-link" href="/indikator-mutu-driver">DRIVER</a>
                         <a class="nav-link" href="/indikator-mutu-upsrs">UPSRS</a>
-                        <a class="nav-link" href=""></a>
                     </nav>
                 </div>
-                <a class="nav-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1RbsNZp3i2fE4VPIuw4L_CJyVsXNy3VTvbnnVeZQ-kss/edit#gid=0">
+                <a class="nav-link" href="/indikator-mutu-keuangan">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Keuangan
                 </a>
-                <a class="nav-link" target="_blank" href="">
+                <a class="nav-link"  href="/indikator-mutu-sdm">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Sumber Daya Manusia
                 </a>
-                <a class="nav-link" target="_blank" href="">
+                <a class="nav-link"  href="">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Hubungan Masyarakat dan Martketing
                 </a>
-                <a class="nav-link" target="_blank" href="">
+                <a class="nav-link"  href="">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bidang Pelayanan Medis
                 </a>
@@ -115,7 +114,7 @@
                             <a class="nav-link" href="">Rekam Medis</a>
                     </nav>
                 </div>
-                <a class="nav-link" target="_blank" href="">
+                <a class="nav-link"  href="">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Satuan Pemeriksa Internal
                 </a>

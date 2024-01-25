@@ -34,6 +34,8 @@ Route::get('/indikator-mutu-it', [indikatorController::class,'it']);
 Route::get('/indikator-mutu-kesling', [indikatorController::class,'kesling']);
 Route::get('/indikator-mutu-security', [indikatorController::class,'security']);
 Route::get('/indikator-mutu-upsrs', [indikatorController::class,'upsrs']);
+Route::get('/indikator-mutu-keuangan', [indikatorController::class,'keuangan']);
+Route::get('/indikator-mutu-sdm', [indikatorController::class,'sdm']);
 Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan']);
 
 // laporan

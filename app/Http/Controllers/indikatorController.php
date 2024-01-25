@@ -22,27 +22,35 @@ class indikatorController extends Controller
     }
     public function atem()
     {
-        return view('dashboard.indikator-mutu.atem');
+        return view('dashboard.indikator-mutu.sarpras.atem');
     }
     public function driver()
     {
-        return view('dashboard.indikator-mutu.driver');
+        return view('dashboard.indikator-mutu.sarpras.driver');
     }
     public function it()
     {
-        return view('dashboard.indikator-mutu.it');
+        return view('dashboard.indikator-mutu.sarpras.it');
     }
     public function kesling()
     {
-        return view('dashboard.indikator-mutu.kesling');
+        return view('dashboard.indikator-mutu.sarpras.kesling');
     }
     public function security()
     {
-        return view('dashboard.indikator-mutu.security');
+        return view('dashboard.indikator-mutu.sarpras.security');
     }
     public function upsrs()
     {
-        return view('dashboard.indikator-mutu.upsrs');
+        return view('dashboard.indikator-mutu.sarpras.upsrs');
+    }
+    public function keuangan()
+    {
+        return view('dashboard.indikator-mutu.keuangan');
+    }
+    public function sdm()
+    {
+        return view('dashboard.indikator-mutu.sdm');
     }
     public function dashboard_laporan()
     {
