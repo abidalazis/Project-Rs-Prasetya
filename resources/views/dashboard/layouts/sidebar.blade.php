@@ -53,11 +53,11 @@
                 <div class="collapse" id="collapseSarpras" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="/indikator-mutu-atem">ALAT ELEKTROMEDIK</a>
-                        <a class="nav-link" href="">INFORMASI DAN TEKNOLOGI</a>
-                        <a class="nav-link" href="">KESEHATAN LINGKUNGAN</a>
-                        <a class="nav-link" href="">SECURITY</a>
-                        <a class="nav-link" href="">DRIVER</a>
-                        <a class="nav-link" href="">UPSRS</a>
+                        <a class="nav-link" href="/indikator-mutu-it">INFORMASI DAN TEKNOLOGI</a>
+                        <a class="nav-link" href="/indikator-mutu-kesling">KESEHATAN LINGKUNGAN</a>
+                        <a class="nav-link" href="/indikator-mutu-security">SECURITY</a>
+                        <a class="nav-link" href="/indikator-mutu-driver">DRIVER</a>
+                        <a class="nav-link" href="/indikator-mutu-upsrs">UPSRS</a>
                         <a class="nav-link" href=""></a>
                     </nav>
                 </div>

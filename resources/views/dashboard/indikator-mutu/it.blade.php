@@ -11,22 +11,22 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>ALAT ELEKTRO MEDIK</h2>
+                      <h2>IT</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=0">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=0">
+                                KETEPATAN WAKTU PERBAIKAN SOFWARE DAN HADWARE YANG TERENCANAKAN 
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=1499967359">
-                                KETEPATAN WAKTU PENGECEKAN ALAT–ALAT MEDIS YANG TERENCANAKAN
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=8169519">
+                                KEPATUHAN PENGUNAAN APLIKASI SIMRS  
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=2057030540">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=1925125261">
+                                LAPORAN KETEPATAN WAKTU PERBAIKAN SOFWARE DAN HADWARE YANG TERENCANAKAN 
                               </a>
                             </li>
                           </ul>

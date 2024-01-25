@@ -29,6 +29,11 @@ use App\Http\Controllers\servicesController;
 Route::get('/', [indikatorController::class,'index']);
 Route::get('/indikator-mutu', [indikatorController::class,'indikator_mutu']);
 Route::get('/indikator-mutu-atem', [indikatorController::class,'atem']);
+Route::get('/indikator-mutu-driver', [indikatorController::class,'driver']);
+Route::get('/indikator-mutu-it', [indikatorController::class,'it']);
+Route::get('/indikator-mutu-kesling', [indikatorController::class,'kesling']);
+Route::get('/indikator-mutu-security', [indikatorController::class,'security']);
+Route::get('/indikator-mutu-upsrs', [indikatorController::class,'upsrs']);
 Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan']);
 
 // laporan

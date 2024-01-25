@@ -24,6 +24,26 @@ class indikatorController extends Controller
     {
         return view('dashboard.indikator-mutu.atem');
     }
+    public function driver()
+    {
+        return view('dashboard.indikator-mutu.driver');
+    }
+    public function it()
+    {
+        return view('dashboard.indikator-mutu.it');
+    }
+    public function kesling()
+    {
+        return view('dashboard.indikator-mutu.kesling');
+    }
+    public function security()
+    {
+        return view('dashboard.indikator-mutu.security');
+    }
+    public function upsrs()
+    {
+        return view('dashboard.indikator-mutu.upsrs');
+    }
     public function dashboard_laporan()
     {
         // $data_laporan = laporan_it::get();

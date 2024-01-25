@@ -11,22 +11,22 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>ALAT ELEKTRO MEDIK</h2>
+                      <h2>KESEHATAN LINGKUNGAN</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=0">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/19OYrORkBHlKKNY5qDuf9udn9a8qOQef8gX0jKVJPgXs/edit#gid=0">
+                                Kesesuaian Hasil Pemeriksaan Uji Swab Unit Gizi Dengan Nilai Baku Mutu
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=1499967359">
-                                KETEPATAN WAKTU PENGECEKAN ALAT–ALAT MEDIS YANG TERENCANAKAN
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/19OYrORkBHlKKNY5qDuf9udn9a8qOQef8gX0jKVJPgXs/edit#gid=395488354">
+                                Kesesuaian Hasil Pemeriksaan Limbah Cair Dengan Nilai Baku Mutu
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=2057030540">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/19OYrORkBHlKKNY5qDuf9udn9a8qOQef8gX0jKVJPgXs/edit#gid=8924164">
+                               Laporan Kesesuaian Hasil Pemeriksaan Uji Swab Unit Gizi Dengan Nilai Baku Mutu
                               </a>
                             </li>
                           </ul>

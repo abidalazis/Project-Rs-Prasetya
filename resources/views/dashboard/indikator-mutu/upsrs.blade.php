@@ -11,22 +11,22 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>ALAT ELEKTRO MEDIK</h2>
+                      <h2>UPSR</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=0">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=0">
+                                Ketepatan Waktu Pemeliharaan AC
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=1499967359">
-                                KETEPATAN WAKTU PENGECEKAN ALAT–ALAT MEDIS YANG TERENCANAKAN
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=9452882">
+                                Ketepatan Waktu Pengecekan APAR dan Hydrant Yang Terencanakan
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=2057030540">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=1630863249">
+                                ketepatan waktu pemeliharaan AC
                               </a>
                             </li>
                           </ul>
