@@ -31,8 +31,54 @@
                                 <div class="mb-3 row">
                                     <label for="unit" class="col-sm-2 col-form-label">unit</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control"
-                                            name='unit'value="{{ $datas->unit }}" id="unit">
+                                            <select class="form-select" name="unit" id="unit" data-placeholder="Pilih Unit">
+                                                <option value=""></option>
+                                                <option value="Lantai 2"@if('Lantai 2'==$datas->unit) selected @endif >Lantai 2</option>
+                                                <option value="Lantai 3"@if('Lantai 3'==$datas->unit) selected @endif>Lantai 3</option>
+                                                <option value="Lantai 4"@if('Lantai 4'==$datas->unit) selected @endif>Lantai 4</option>
+                                                <option value="Lantai 5"@if('Lantai 5'==$datas->unit) selected @endif>Lantai 5</option>
+                                                <option value="Lantai 6"@if('Lantai 6'==$datas->unit) selected @endif>Lantai 6</option>
+                                                <option value="IGD"@if('IGD'==$datas->unit) selected @endif>IGD</option>
+                                                <option value="Marketing"@if('Marketing'==$datas->unit) selected @endif>Marketing</option>
+                                                <option value="Keuangan"@if('Keuangan'==$datas->unit) selected @endif>Keuangan</option>
+                                                <option value="kasir"@if('kasir'==$datas->unit) selected @endif>kasir</option>
+                                                <option value="Casemix"@if('Casemix'==$datas->unit) selected @endif>Casemix</option>
+                                                <option value="Poli Urologi"@if('Poli Urologi'==$datas->unit) selected @endif>Poli Urologi</option>
+                                                <option value="Poli Paru"@if('Poli Paru'==$datas->unit) selected @endif>Poli Paru</option>
+                                                <option value="Poli Orthopedhi"@if('Poli Orthopedhi'==$datas->unit) selected @endif>Poli Orthopedhi</option>
+                                                <option value="Poli Mata"@if('Poli Mata'==$datas->unit) selected @endif>Poli Mata</option>
+                                                <option value="Poli Gigi"@if('Poli Gigi'==$datas->unit) selected @endif>Poli Gigi</option>
+                                                <option value="Poli Bedah Mulut"@if('Poli Bedah Mulut'==$datas->unit) selected @endif>Poli Bedah Mulut</option>
+                                                <option value="Poli Jantung"@if('Poli Jantung'==$datas->unit) selected @endif>Poli Jantung</option>
+                                                <option value="Poli Saraf"@if('Poli Saraf'==$datas->unit) selected @endif>Poli Saraf</option>
+                                                <option value="Poli Kulit"@if('Poli Kulit'==$datas->unit) selected @endif>Poli Kulit</option>
+                                                <option value="Poli Bedah Plastik"@if('Poli Bedah Plastik'==$datas->unit) selected @endif>Poli Bedah Plastik</option>
+                                                <option value="Poli Bedah"@if('Poli Bedah'==$datas->unit) selected @endif>Poli Bedah</option>
+                                                <option value="Poli THT"@if('Poli THT'==$datas->unit) selected @endif>Poli THT</option>
+                                                <option value="Poli Kandungan"@if('Poli Kandungan'==$datas->unit) selected @endif>Poli Kandungan</option>
+                                                <option value="Poli anak"@if('Poli anak'==$datas->unit) selected @endif>Poli anak</option>
+                                                <option value="Poli Dalam"@if('Poli Dalam'==$datas->unit) selected @endif>Poli Dalam</option>
+                                                <option value="Nifas"@if('Nifas'==$datas->unit) selected @endif>Nifas</option>
+                                                <option value="Kamar Bersalin"@if('Kamar Bersalin'==$datas->unit) selected @endif>Kamar Bersalin</option>
+                                                <option value="Kantor PT"@if('Kantor PT'==$datas->unit) selected @endif>Kantor PT</option>
+                                                <option value="Rehabilitasi Medik"@if('Rehabilitasi Medik'==$datas->unit) selected @endif>Rehabilitasi Medik</option>
+                                                <option value="Pos Parkir"@if('Pos Parkir'==$datas->unit) selected @endif>Pos Parkir</option>
+                                                <option value="Security"@if('Security'==$datas->unit) selected @endif>Security</option>
+                                                <option value="Gizi"@if('Gizi'==$datas->unit) selected @endif>Gizi</option>
+                                                <option value="Management"@if('Management'==$datas->unit) selected @endif>Management</option>
+                                                <option value="Kamar Operasi (OK)"@if('Kamar Operasi (OK)'==$datas->unit) selected @endif>Kamar Operasi (OK)</option>
+                                                <option value="CSSD"@if('CSSD'==$datas->unit) selected @endif>CSSD</option>
+                                                <option value="Perinatologi"@if('Perinatologi'==$datas->unit) selected @endif>Perinatologi</option>
+                                                <option value="Rekam Medis"@if('Rekam Medis'==$datas->unit) selected @endif>Rekam Medis</option>
+                                                <option value="Farmasi"@if('Farmasi'==$datas->unit) selected @endif>Farmasi</option>
+                                                <option value="Gudang Farmasi"@if('Gudang Farmasi'==$datas->unit) selected @endif>Gudang Farmasi</option>
+                                                <option value="Laboratorium"@if('Laboratorium'==$datas->unit) selected @endif>Laboratorium</option>
+                                                <option value="Radiologi"@if('Radiologi'==$datas->unit) selected @endif>Radiologi</option>
+                                                <option value="ICU"@if('ICU'==$datas->unit) selected @endif>ICU</option>
+                                                <option value="TPP RAJAL"@if('TPP RAJAL'==$datas->unit) selected @endif>TPP RAJAL</option>
+                                                <option value="TPP RANAP"@if('PP RANAP'==$datas->unit) selected @endif>TPP RANAP</option>
+                                                <option value="Tempat Baru|Ikut keterangan kerusakan"@if('Tempat Baru|Ikut keterangan kerusakan'==$datas->unit) selected @endif>Tempat Baru-ikut keterangan</option>
+                                            </select>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">

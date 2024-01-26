@@ -41,8 +41,45 @@
                                             <option value="Lantai 5">Lantai 5</option>
                                             <option value="Lantai 6">Lantai 6</option>
                                             <option value="IGD">IGD</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Keuangan">Keuangan</option>
+                                            <option value="kasir">kasir</option>
+                                            <option value="Casemix">Casemix</option>
+                                            <option value="Poli Urologi">Poli Urologi</option>
+                                            <option value="Poli Paru">Poli Paru</option>
+                                            <option value="Poli Orthopedhi">Poli Orthopedhi</option>
+                                            <option value="Poli Mata">Poli Mata</option>
+                                            <option value="Poli Gigi">Poli Gigi</option>
+                                            <option value="Poli Bedah Mulut">Poli Bedah Mulut</option>
+                                            <option value="Poli Jantung">Poli Jantung</option>
+                                            <option value="Poli Saraf">Poli Saraf</option>
+                                            <option value="Poli Kulit">Poli Kulit</option>
+                                            <option value="Poli Bedah Plastik">Poli Bedah Plastik</option>
+                                            <option value="Poli Bedah">Poli Bedah</option>
+                                            <option value="Poli THT">Poli THT</option>
+                                            <option value="Poli Kandungan">Poli Kandungan</option>
+                                            <option value="Poli anak">Poli anak</option>
+                                            <option value="Poli Dalam">Poli Dalam</option>
+                                            <option value="Nifas">Nifas</option>
+                                            <option value="Kamar Bersalin">Kamar Bersalin</option>
+                                            <option value="Kantor PT">Kantor PT</option>
+                                            <option value="Rehabilitasi Medik">Rehabilitasi Medik</option>
+                                            <option value="Pos Parkir">Pos Parkir</option>
+                                            <option value="Security">Security</option>
+                                            <option value="Gizi">Gizi</option>
+                                            <option value="Management">Management</option>
+                                            <option value="Kamar Operasi (OK)">Kamar Operasi (OK)</option>
+                                            <option value="CSSD">CSSD</option>
+                                            <option value="Perinatologi">Perinatologi</option>
+                                            <option value="Rekam Medis">Rekam Medis</option>
+                                            <option value="Farmasi">Farmasi</option>
+                                            <option value="Gudang Farmasi">Gudang Farmasi</option>
+                                            <option value="Laboratorium">Laboratorium</option>
+                                            <option value="Radiologi">Radiologi</option>
+                                            <option value="ICU">ICU</option>
                                             <option value="TPP RAJAL">TPP RAJAL</option>
                                             <option value="TPP RANAP">TPP RANAP</option>
+                                            <option value="Tempat Baru|Ikut keterangan kerusakan">Tempat Baru-ikut keterangan kerusakan</option>
                                         </select>
                                     </div>
                                 </div>
