@@ -65,10 +65,10 @@ class laporanController extends Controller
         Session::flash('tanggal',$request->tanggal);
         Session::flash('unit',$request->unit);
         Session::flash('jenis',$request->jenis);
-        Session::flash('kerusakan',$request->kerusakan);
+        Session::flash('keluhan',$request->keluhan);
         Session::flash('jam_laporan',$request->jam_laporan);
         Session::flash('jam_selesai',$request->jam_selesai);
-        Session::flash('selisih',$request->selisih);
+        Session::flash('jenis_keluhan',$request->jenis_keluhan);
         Session::flash('keterangan',$request->keterangan);
 
         $request->validate([
@@ -76,20 +76,20 @@ class laporanController extends Controller
             'tanggal'=>'required',
             'unit'=>'required',
             'jenis'=>'required',
-            'kerusakan'=>'required',
+            'keluhan'=>'required',
             'jam_laporan'=>'required',
             'jam_selesai'=>'required',
-            'selisih'=>'required',
+            'jenis_keluhan'=>'required',
             'keterangan'=>'required'
         ],[
             'nama.required'=>'Nama wajib di isi!',
             'tanggal.required'=>' Tanggal wajib di isi!',
             'unit.required'=>'Unit wajib di isi!',
             'jenis.required'=>'Jenis wajib di isi!',
-            'kerusakan.required'=>'Kerusakan wajib di isi!',
+            'keluhan.required'=>'keluhan wajib di isi!',
             'jam_laporan.required'=>'Jam laporan wajib di isi!',
             'jam_selesai.required'=>'jam selesai wajib di isi!',
-            'selisih.required'=>'selisih waktu wajib di isi!',
+            'jenis_keluhan.required'=>'jenis_keluhan waktu wajib di isi!',
             'keterangan.required'=>'Keterangan wajib di isi!'
         ]);
         $data = [ 
@@ -97,10 +97,10 @@ class laporanController extends Controller
             'tanggal'=>$request->tanggal,
             'unit'=>$request->unit,
             'jenis'=>$request->jenis,
-            'kerusakan'=>$request->kerusakan,
+            'keluhan'=>$request->keluhan,
             'jam_laporan'=>$request->jam_laporan,
             'jam_selesai'=>$request->jam_selesai,
-            'selisih'=>$request->selisih,
+            'jenis_keluhan'=>$request->jenis_keluhan,
             'keterangan'=>$request->keterangan
         ];
         laporan_it::create($data);
@@ -141,25 +141,35 @@ class laporanController extends Controller
      */
     public function update(Request $request, $id)
     {
+        Session::flash('nama',$request->nama);
+        Session::flash('tanggal',$request->tanggal);
+        Session::flash('unit',$request->unit);
+        Session::flash('jenis',$request->jenis);
+        Session::flash('Keluhan',$request->Keluhan);
+        Session::flash('jam_laporan',$request->jam_laporan);
+        Session::flash('jam_selesai',$request->jam_selesai);
+        Session::flash('jenis_keluhan',$request->jenis_keluhan);
+        Session::flash('keterangan',$request->keterangan);
+
         $request->validate([
             'nama'=>'required',
             'tanggal'=>'required',
             'unit'=>'required',
             'jenis'=>'required',
-            'kerusakan'=>'required',
+            'Keluhan'=>'required',
             'jam_laporan'=>'required',
             'jam_selesai'=>'required',
-            'selisih'=>'required|int',
+            'jenis_keluhan'=>'required',
             'keterangan'=>'required'
         ],[
             'nama.required'=>'Nama wajib di isi!',
             'tanggal.required'=>' Tanggal wajib di isi!',
             'unit.required'=>'Unit wajib di isi!',
             'jenis.required'=>'Jenis wajib di isi!',
-            'kerusakan.required'=>'Kerusakan wajib di isi!',
+            'Keluhan.required'=>'keluhan wajib di isi!',
             'jam_laporan.required'=>'Jam laporan wajib di isi!',
             'jam_selesai.required'=>'jam selesai wajib di isi!',
-            'selisih.required'=>'selisih waktu wajib di isi!',
+            'jenis_keluhan.required'=>'jenis_keluhan waktu wajib di isi!',
             'keterangan.required'=>'Keterangan wajib di isi!'
         ]);
         $data = [ 
@@ -167,10 +177,10 @@ class laporanController extends Controller
             'tanggal'=>$request->tanggal,
             'unit'=>$request->unit,
             'jenis'=>$request->jenis,
-            'kerusakan'=>$request->kerusakan,
+            'keluhan'=>$request->keluhan,
             'jam_laporan'=>$request->jam_laporan,
             'jam_selesai'=>$request->jam_selesai,
-            'selisih'=>$request->selisih,
+            'jenis_keluhan'=>$request->jenis_keluhan,
             'keterangan'=>$request->keterangan
         ];
         laporan_it::where('id',$id)->update($data);

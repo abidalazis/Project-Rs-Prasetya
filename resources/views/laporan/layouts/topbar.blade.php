@@ -18,7 +18,15 @@
                 <li><a class="dropdown-item" href="#!">Settings</a></li>
                 <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Logout</a></li>
+                <li>
+                    {{-- <a class="dropdown-item" href="/logout">Logout</a> --}}
+                    <div class="nav-item text-nowrap">
+                        <form action="/logout" method="POST">
+                        @csrf
+                          <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>Log Out</button>
+                        </form>
+                      </div>
+                </li>
             </ul>
         </li>
     </ul>

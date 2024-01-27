@@ -1,10 +1,10 @@
 @extends('laporan.layouts.main')
 @section('content')
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Laporan Service</h1>
+    <h1 class="mt-4">Laporan IT</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-        <li class="breadcrumb-item active">Laporan Service</li>
+        <li class="breadcrumb-item active">Laporan IT</li>
     </ol>
     <div class="card mb-4">
         <div class="card-header">
@@ -21,10 +21,10 @@
                         <th>Nama</th>
                         <th>Unit</th>
                         <th>Jenis</th>
-                        <th>Kerusakan</th>
+                        <th>Keluhan</th>
                         <th>Jam Laporan</th>
                         <th>Jam Selesai</th>
-                        <th>Selisih Waktu</th>
+                        <th>Jenis Keluhan</th>
                         <th>Keterangan</th>
                         <th>Aksi</th>
                     </tr>
@@ -37,10 +37,10 @@
                         <td>{{ $item->nama }}</td>
                         <td>{{ $item->unit }}</td>
                         <td>{{ $item->jenis }}</td>
-                        <td>{{ $item->kerusakan }}</td>
+                        <td>{{ $item->Keluhan }}</td>
                         <td>{{ $item->jam_laporan }}</td>
                         <td>{{ $item->jam_selesai }}</td>
-                        <td>{{ $item->selisih }}</td>
+                        <td>{{ $item->jenis_keluhan }}</td>
                         <td>{{ $item->keterangan }}</td>
                         <td>
                             <a href="/laporan-it/ {{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>

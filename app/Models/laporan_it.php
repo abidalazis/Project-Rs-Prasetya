@@ -13,10 +13,10 @@ class laporan_it extends Model
         'tanggal',
         'unit',
         'jenis',
-        'kerusakan',
+        'keluhan',
         'jam_laporan',
         'jam_selesai',
-        'selisih',
+        'jenis_keluhan',
         'keterangan'
     ];
 }

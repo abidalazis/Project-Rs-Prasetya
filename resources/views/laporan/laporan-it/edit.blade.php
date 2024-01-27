@@ -84,15 +84,27 @@
                                 <div class="mb-3 row">
                                     <label for="jenis" class="col-sm-2 col-form-label">jenis</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control"
-                                            name='jenis'value="{{ $datas->jenis }}" id="jenis">
+                                        <div class="col-sm-10">
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis" type="checkbox" id="inlineCheckbox1" value="Software" @if('Software'==$datas->jenis) checked @endif>
+                                            <label class="form-check-label" for="inlineCheckbox1">Software</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis" type="checkbox" id="inlineCheckbox2" value="Hardware" @if('Hardware'==$datas->jenis) checked @endif>
+                                            <label class="form-check-label" for="inlineCheckbox2">Hardware</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis" type="checkbox" id="inlineCheckbox3" value="Jaringan" @if('Jaringan'==$datas->jenis) checked @endif>
+                                            <label class="form-check-label" for="inlineCheckbox3">Jaringan</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="kerusakan" class="col-sm-2 col-form-label">kerusakan</label>
+                                    <label for="Keluhan" class="col-sm-2 col-form-label">Keluhan</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control"
-                                            name='kerusakan'value="{{ $datas->kerusakan }}" id="kerusakan">
+                                            name='Keluhan'value="{{ $datas->Keluhan }}" id="Keluhan">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
@@ -103,17 +115,17 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="jam_selesai" class="col-sm-2 col-form-label">jam_selesai</label>
+                                    <label for="jam_selesai" class="col-sm-2 col-form-label">jam respon</label>
                                     <div class="col-sm-10">
                                         <input type="time" class="form-control"
                                             name='jam_selesai'value="{{ $datas->jam_selesai }}" id="jam_selesai">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="selisih" class="col-sm-2 col-form-label">selisih</label>
+                                    <label for="jenis_keluhan" class="col-sm-2 col-form-label">jeniskeluhan</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control"
-                                            name='selisih'value="{{ $datas->selisih }}" id="selisih">
+                                            name='jenis_keluhan'value="{{ $datas->jenis_keluhan }}" id="jenis_keluhan">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">

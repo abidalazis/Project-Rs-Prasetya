@@ -19,10 +19,10 @@ class Laporan extends Migration
             $table->date('tanggal');
             $table->string('unit');
             $table->string('jenis');
-            $table->string('kerusakan');
+            $table->string('Keluhan');
             $table->time('jam_laporan');
             $table->time('jam_selesai');
-            $table->integer('selisih');
+            $table->string('jenis_keluhan');
             $table->string('keterangan');
             $table->timestamps();
             $table->softDeletes();

@@ -2,8 +2,8 @@
 @push('select2')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
 @endpush
-@include('laporan.layouts.pesan')
 @section('content')
+@include('laporan.layouts.pesan')
     <div class="container-fluid px-4">
         <h1 class="h2">Tambah Laporan</h1>
 
@@ -94,13 +94,17 @@
                                         <input class="form-check-input" name="jenis" type="checkbox" id="inlineCheckbox2" value="Hardware">
                                         <label class="form-check-label" for="inlineCheckbox2">Hardware</label>
                                         </div>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" name="jenis" type="checkbox" id="inlineCheckbox3" value="Jaringan">
+                                        <label class="form-check-label" for="inlineCheckbox3">Jaringan</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="kerusakan" class="col-sm-2 col-form-label">kerusakan</label>
+                                    <label for="keluhan" class="col-sm-2 col-form-label">Keluhan</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control"
-                                            name='kerusakan'value="{{ Session::get('kerusakan') }}" id="kerusakan">
+                                            name='keluhan'value="{{ Session::get('keluhan') }}" id="keluhan">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
@@ -118,10 +122,22 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="selisih" class="col-sm-2 col-form-label">selisih</label>
+                                    <label for="jenis_keluhan" class="col-sm-2 col-form-label">Jenis Keluhan</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control"
-                                            name='selisih'value="{{ Session::get('selisih') }}" id="selisih">
+                                        <div class="col-sm-10">
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis_keluhan" type="checkbox" id="inlineCheckbo1" value="Ringan">
+                                            <label class="form-check-label" for="inlineCheckbo1">Ringan</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis_keluhan" type="checkbox" id="inlineCheckbo2" value="Sedang">
+                                            <label class="form-check-label" for="inlineCheckbo2">Sedang</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="jenis_keluhan" type="checkbox" id="inlineCheckbo3" value="Berat">
+                                            <label class="form-check-label" for="inlineCheckbo3">Berat</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
