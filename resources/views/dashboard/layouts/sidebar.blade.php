@@ -68,7 +68,7 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Sumber Daya Manusia
                 </a>
-                <a class="nav-link"  href="">
+                <a class="nav-link"  href="/indikator-mutu-humas">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Hubungan Masyarakat dan Martketing
                 </a>
@@ -83,18 +83,18 @@
                 </a>
                 <div class="collapse" id="collapseUang" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <li><a class="nav-link" href="">CSSD</a>
-                            <a class="nav-link" href="">ICU</a>
-                            <a class="nav-link" href="">IGD</a>
-                            <a class="nav-link" href="">KAMAR BERSALIN - NIFAS</a>
-                            <a class="nav-link" href="">KAMAR OPERASI</a>
-                            <a class="nav-link" href="">LAUNDRY</a>
-                            <a class="nav-link" href="">LANTAI 2</a>
-                            <a class="nav-link" href="">LANTAI 4</a>
-                            <a class="nav-link" href="">LANTAI 5</a>
-                            <a class="nav-link" href="">LANTAI 6</a>
-                            <a class="nav-link" href="">PERINATOLOGI</a>
-                            <a class="nav-link" href="">RAWAT JALAN</a>
+                        <li><a class="nav-link" href="/indikator-mutu-cssd">CSSD</a>
+                            <a class="nav-link" href="/indikator-mutu-icu">ICU</a>
+                            <a class="nav-link" href="/indikator-mutu-igd">IGD</a>
+                            <a class="nav-link" href="/indikator-mutu-kaber">KAMAR BERSALIN - NIFAS</a>
+                            <a class="nav-link" href="/indikator-mutu-ok">KAMAR OPERASI</a>
+                            <a class="nav-link" href="/indikator-mutu-londri">LAUNDRY</a>
+                            <a class="nav-link" href="/indikator-mutu-lt2">LANTAI 2</a>
+                            <a class="nav-link" href="/indikator-mutu-lt4">LANTAI 4</a>
+                            <a class="nav-link" href="/indikator-mutu-lt5">LANTAI 5</a>
+                            <a class="nav-link" href="/indikator-mutu-lt6">LANTAI 6</a>
+                            <a class="nav-link" href="/indikator-mutu-perina">PERINATOLOGI</a>
+                            <a class="nav-link" href="/indikator-mutu-rajal">RAWAT JALAN</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsenunjang" aria-expanded="false" aria-controls="collapsenunjang">

@@ -52,6 +52,58 @@ class indikatorController extends Controller
     {
         return view('dashboard.indikator-mutu.sdm');
     }
+    public function humas()
+    {
+        return view('dashboard.indikator-mutu.humas');
+    }
+    public function cssd()
+    {
+        return view('dashboard.indikator-mutu.perawat.cssd');
+    }
+    public function icu()
+    {
+        return view('dashboard.indikator-mutu.perawat.icu');
+    }
+    public function igd()
+    {
+        return view('dashboard.indikator-mutu.perawat.igd');
+    }
+    public function kaber()
+    {
+        return view('dashboard.indikator-mutu.perawat.kaber');
+    }
+    public function ok()
+    {
+        return view('dashboard.indikator-mutu.perawat.ok');
+    }
+    public function londri()
+    {
+        return view('dashboard.indikator-mutu.perawat.londri');
+    }
+    public function lt2()
+    {
+        return view('dashboard.indikator-mutu.perawat.lt2');
+    }
+    public function lt4()
+    {
+        return view('dashboard.indikator-mutu.perawat.lt4');
+    }
+    public function lt5()
+    {
+        return view('dashboard.indikator-mutu.perawat.lt5');
+    }
+    public function lt6()
+    {
+        return view('dashboard.indikator-mutu.perawat.lt6');
+    }
+    public function perina()
+    {
+        return view('dashboard.indikator-mutu.perawat.perina');
+    }
+    public function rajal()
+    {
+        return view('dashboard.indikator-mutu.perawat.rajal');
+    }
     
 
     

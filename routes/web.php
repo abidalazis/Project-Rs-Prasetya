@@ -45,6 +45,19 @@ Route::get('/indikator-mutu-security', [indikatorController::class,'security'])-
 Route::get('/indikator-mutu-upsrs', [indikatorController::class,'upsrs'])->middleware('auth');
 Route::get('/indikator-mutu-keuangan', [indikatorController::class,'keuangan'])->middleware('auth');
 Route::get('/indikator-mutu-sdm', [indikatorController::class,'sdm'])->middleware('auth');
+Route::get('/indikator-mutu-humas', [indikatorController::class,'humas'])->middleware('auth');
+Route::get('/indikator-mutu-cssd', [indikatorController::class,'cssd'])->middleware('auth');
+Route::get('/indikator-mutu-icu', [indikatorController::class,'icu'])->middleware('auth');
+Route::get('/indikator-mutu-igd', [indikatorController::class,'igd'])->middleware('auth');
+Route::get('/indikator-mutu-kaber', [indikatorController::class,'kaber'])->middleware('auth');
+Route::get('/indikator-mutu-ok', [indikatorController::class,'ok'])->middleware('auth');
+Route::get('/indikator-mutu-londri', [indikatorController::class,'londri'])->middleware('auth');
+Route::get('/indikator-mutu-lt2', [indikatorController::class,'lt2'])->middleware('auth');
+Route::get('/indikator-mutu-lt4', [indikatorController::class,'lt4'])->middleware('auth');
+Route::get('/indikator-mutu-lt5', [indikatorController::class,'lt5'])->middleware('auth');
+Route::get('/indikator-mutu-lt6', [indikatorController::class,'lt6'])->middleware('auth');
+Route::get('/indikator-mutu-perina', [indikatorController::class,'perina'])->middleware('auth');
+Route::get('/indikator-mutu-rajal', [indikatorController::class,'rajal'])->middleware('auth');
 // Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan'])->middleware('auth');
 
 // laporan
