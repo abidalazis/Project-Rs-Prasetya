@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\dashboardController;
 use App\Models\laporan;
 use App\Models\services;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,9 @@ Route::get('/login', [loginController::class, 'index']);
 Route::post('/login', [loginController::class, 'loginAuth'])->name('login');
 Route::post('/logout', [loginController::class, 'logout']);
 
+// Dashboard
+Route::get('/laporan-it/dashboard', [dashboardController::class,'dashboard_laporan'])->middleware('auth');
+
 // indikator
 Route::get('/', [indikatorController::class,'index'])->middleware('auth');
 Route::get('/indikator-mutu', [indikatorController::class,'indikator_mutu'])->middleware('auth');
@@ -41,7 +45,7 @@ Route::get('/indikator-mutu-security', [indikatorController::class,'security'])-
 Route::get('/indikator-mutu-upsrs', [indikatorController::class,'upsrs'])->middleware('auth');
 Route::get('/indikator-mutu-keuangan', [indikatorController::class,'keuangan'])->middleware('auth');
 Route::get('/indikator-mutu-sdm', [indikatorController::class,'sdm'])->middleware('auth');
-Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan'])->middleware('auth');
+// Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan'])->middleware('auth');
 
 // laporan
 Route::get('/laporan-it', function () {
@@ -56,4 +60,5 @@ Route::resource('tambah-ruangan', ruanganController::class)->middleware('auth');
 
 
 Route::resource('laporan-it', laporanController::class)->middleware('auth');
+
 

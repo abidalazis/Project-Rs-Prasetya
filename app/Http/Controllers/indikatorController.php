@@ -52,27 +52,7 @@ class indikatorController extends Controller
     {
         return view('dashboard.indikator-mutu.sdm');
     }
-    public function dashboard_laporan()
-    {
-        // $data_laporan = laporan_it::get();
-        // $data_unit =[];
-        // foreach ($data_laporan as $dl) {
-        //     $data[] = $dl->unit;
-        // }
-        // $unit = laporan_it::select(laporan_it::raw("select COUNT(*) as total unit, unit from laporan_its group by unit"));
-        $unitCounts = Laporan_it::selectRaw('COUNT(*) as total_unit, unit')
-                    ->groupBy('unit')
-                    ->get();
-        $dataChart="";
-        foreach ($unitCounts as $list) {
-            $dataChart.="['".$list->unit."',".$list->total_unit."],";
-        }
-       $arr['dataChart']=rtrim($dataChart,",");
-        // dd($dataChart);
-        
-        // dd($data);
-        return view('laporan.index',$arr);
-    }
+    
 
     
 }
