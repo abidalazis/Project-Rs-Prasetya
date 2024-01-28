@@ -1,11 +1,10 @@
-@extends('dashboard.layouts.main')
+@extends('laporan.layouts.main')
 @section('content')
-@include('dashboard.layouts.pesan')
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Laporan Service</h1>
+    <h1 class="mt-4">Laporan IT</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-        <li class="breadcrumb-item active">Laporan Service</li>
+        <li class="breadcrumb-item active">Laporan IT</li>
     </ol>
     <div class="card mb-4">
         <div class="card-header">
@@ -13,15 +12,19 @@
             DataTable Example
         </div>
         <div class="card-body">
-            <a href="{{ route('laporan-service.create') }}" class="btn btn-primary">Tambah</a>
+            <a href="{{ route('laporan-it.create') }}" class="btn btn-primary">Tambah</a>
             <table id="datatablesSimple">
                 <thead>
                     <tr>
                         <th>No</th>
                         <th>Tanggal</th>
-                        <th>Ruangan</th>
-                        <th>Merk</th>
-                        <th>Status</th>
+                        <th>Nama</th>
+                        <th>Unit</th>
+                        <th>Jenis</th>
+                        <th>Keluhan</th>
+                        <th>Jam Laporan</th>
+                        <th>Jam Selesai</th>
+                        <th>Jenis Keluhan</th>
                         <th>Keterangan</th>
                         <th>Aksi</th>
                     </tr>
@@ -31,13 +34,17 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->tanggal }}</td>
-                        <td>{{ optional($item->ruangan)->nama_ruangan }}</td>
-                        <td>{{ optional($item->merk)->nama_merk }}</td>
-                        <td>{{ $item->status }}</td>
+                        <td>{{ $item->nama }}</td>
+                        <td>{{ $item->unit }}</td>
+                        <td>{{ $item->jenis }}</td>
+                        <td>{{ $item->Keluhan }}</td>
+                        <td>{{ $item->jam_laporan }}</td>
+                        <td>{{ $item->jam_selesai }}</td>
+                        <td>{{ $item->jenis_keluhan }}</td>
                         <td>{{ $item->keterangan }}</td>
                         <td>
-                            <a href="/laporan-service/ {{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-                            <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline" action="/laporan-service/ {{$item->id}}"
+                            <a href="/laporan-it/ {{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
+                            <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline" action="/laporan-it/ {{$item->id}}"
                                 method="post">
                                 @csrf
                                 @method('DELETE')

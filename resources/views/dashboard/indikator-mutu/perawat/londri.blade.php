@@ -11,7 +11,17 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      
+                      <h2></h2>
+                        <div class="col">
+                          <ul>
+                            <li >
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1g7AzUnD8dUxoxdLjfJMQXf1RDP-rspr4yrSrdpbSSak/edit#gid=0">
+                              Angka Kejadian pemakaian linen tidak sesui unit
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

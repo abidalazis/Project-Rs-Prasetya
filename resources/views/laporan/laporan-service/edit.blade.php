@@ -1,9 +1,9 @@
-@extends('dashboard.layouts.main')
-@section('container')
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Edit barang</h1>
-    
-  </div>
+@extends('laporan.layouts.main')
+@section('content')
+<div class="container-fluid px-4 mt-4">
+  <h1 class="h2">Edit Laporan</h1>
+
+</div>
   <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-md-12">
@@ -24,7 +24,7 @@
                                 <label class="font-weight-bold">Nama Ruangan</label>
                                             <select class="form-select" name="id_ruangan">
                                                 @foreach ($data_ruangan as $item)
-                                                <option value="{{ $item->id }}" @if($item->id==$merk->id_ruangan) selected @endif>{{ $item->nama_ruangan }}</option>
+                                                <option value="{{ $item->id }}" @if($item->id==$datas->id_ruangan) selected @endif>{{ $item->nama_ruangan }}</option>
                                                 @endforeach
                                               </select>
                             </div>
@@ -32,7 +32,7 @@
                                 <label class="font-weight-bold">Merk</label>
                                             <select class="form-select" name="id_merk">
                                                 @foreach ($data_merk as $item)
-                                                <option value="{{ $item->id }}" @if($item->id==$merk->id_merk) selected @endif>{{ $item->nama_merk }}</option>
+                                                <option value="{{ $item->id }}" @if($item->id==$datas->id_merk) selected @endif>{{ $item->nama_merk }}</option>
                                                 @endforeach
                                               </select>
                             </div>
