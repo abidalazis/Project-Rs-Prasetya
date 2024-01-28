@@ -11,21 +11,21 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>HUMAS MARKETING</h2>
+                      <h2>PENCEGAHAN DAN PENGENDALIAN INFEKSI</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1271780149">
-                                Kecepatan Respon Pada Komplain
+                              <a target="_blank" style="text-decoration: none;" href="">
+                                 
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1544732967">
-                                Angka Kepuasan Pasien dan Keluarga                             </a>
+                              <a target="_blank" style="text-decoration: none;" href="">
+                                                           </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=866342788">
-                                Kelengkapan General Concerne Setelah Mendapatkan Informasi Yang Jelas                               </a>
+                              <a target="_blank" style="text-decoration: none;" href="">
+                                                             </a>
                             </li>
                           </ul>
                         </div>

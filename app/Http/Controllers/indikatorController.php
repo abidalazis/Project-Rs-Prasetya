@@ -104,6 +104,36 @@ class indikatorController extends Controller
     {
         return view('dashboard.indikator-mutu.perawat.rajal');
     }
+
+    //Penunjang Medis
+    public function casemix()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.casemix');
+    }
+    public function farmasi()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.farmasi');
+    }
+    public function gisi()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.gisi');
+    }
+    public function lab()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.lab');
+    }
+    public function radioogi()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.radioogi');
+    }
+    public function rehab()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.rehab');
+    }
+    public function rm()
+    {
+        return view('dashboard.indikator-mutu.penunjang-medis.rm');
+    }
     
 
     

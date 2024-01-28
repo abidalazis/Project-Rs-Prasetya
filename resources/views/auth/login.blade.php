@@ -54,7 +54,7 @@
                                                 is-invalid
                                             @enderror
                                             id="email" aria-describedby="emailHelp"
-                                            placeholder="Enter Email Address..." name="email" autofocus required value="{{ old('email') }}">
+                                            placeholder="Masukkan Email . . . ." name="email" autofocus required value="{{ old('email') }}">
                                             @error('email')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
@@ -62,19 +62,19 @@
                                             @enderror
                                             </div>
                                         
-                                        <div class="form-group">
+                                        <div class="form-group pt-2 pb-2">
                                             <input type="password" class="form-control form-control-user"
                                                 id="password" placeholder="Password" name="password" required>
                                             
                                             </div>
                                         
-                                        <div class="form-group">
+                                        {{-- <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
                                                 <label class="custom-control-label" for="customCheck">Remember
                                                     Me</label>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </button>

@@ -11,21 +11,21 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>HUMAS MARKETING</h2>
+                      <h2>Laboratorium</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1271780149">
-                                Kecepatan Respon Pada Komplain
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=0">
+                              Pelaporan Nilai Kritis Hasil Pemeriksaan Laboratorium < 30 Menit
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1544732967">
-                                Angka Kepuasan Pasien dan Keluarga                             </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=1010761211">
+                              Tidak Adanya Kejadian Penundaan / Gagal Pemeriksaan Jaringan PA / Kultur Push Karena Sampel Hilang                    </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=866342788">
-                                Kelengkapan General Concerne Setelah Mendapatkan Informasi Yang Jelas                               </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=2058976793">
+                              Kesesuain Identifikasi Produk Darah Denah Lembar Permintaan               </a>
                             </li>
                           </ul>
                         </div>

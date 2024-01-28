@@ -52,16 +52,26 @@
         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
         <li class="breadcrumb-item active">Laporan Service</li>
     </ol>
-  
     <div class="row">
-      <div class="col-6">
-        <div id="piechart" style="width: 900px; height: 500px;"></div>
-      </div>  
-      <div class="col-6">
-        <div id="jenis" style="width: 900px; height: 500px;"></div>
-      </div>  
+        <div class="col-xl-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                   
+                    Area Chart Example
+                </div>
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    
+                    Bar Chart Example
+                </div>
+                <div id="jenis" style="width: 900px; height: 500px;"></div>
+            </div>
+        </div>
     </div>
-   
 </div>
 @endsection
 

@@ -11,21 +11,21 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>HUMAS MARKETING</h2>
+                      <h2>Casemix</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1271780149">
-                                Kecepatan Respon Pada Komplain
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1lt40NsqJvfr4Z0IuUDLMA9SFs4EPhEu77qdDP225E1M/edit#gid=0">
+                              KEKURANGAN /KETIDAK LENGKAPAN DATA BERKAS UNTUK KLAIM BPJS
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1544732967">
-                                Angka Kepuasan Pasien dan Keluarga                             </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1lt40NsqJvfr4Z0IuUDLMA9SFs4EPhEu77qdDP225E1M/edit#gid=311820740">
+                              KETEPATAN JADWAL PENGIRIMAN BERKAS KLAIM KE KANTOR BPJS KESEHATAN SETIAP TGL 5         </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=866342788">
-                                Kelengkapan General Concerne Setelah Mendapatkan Informasi Yang Jelas                               </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1lt40NsqJvfr4Z0IuUDLMA9SFs4EPhEu77qdDP225E1M/edit#gid=1046642320">
+                              KETEPATAN WAKTU KLARIFIKASI PENDING CLAIM < 3 BULAN        </a>
                             </li>
                           </ul>
                         </div>

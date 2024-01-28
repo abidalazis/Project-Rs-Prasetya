@@ -11,21 +11,17 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2></h2>
+                      <h2>Gizi</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="">
-                                 
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/192k3V_Tv-jsUUIOsPzRoXAf9eGIVgiok0fZfy_8SyFY/edit#gid=1732712903">
+                              Kepatuhan Identifikasi Pasien 
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="">
-                                                           </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="">
-                                                             </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/192k3V_Tv-jsUUIOsPzRoXAf9eGIVgiok0fZfy_8SyFY/edit#gid=955481609">
+                              ANGKA KELENGKAPAN PENGKAJIAN GIZI DALAM 2X24 JAM UNTUK PASIEN BARU                  </a>
                             </li>
                           </ul>
                         </div>

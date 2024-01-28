@@ -11,21 +11,21 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>HUMAS MARKETING</h2>
+                      <h2>Perinatlogi</h2>
                         <div class="col">
                           <ul>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1271780149">
-                                Kecepatan Respon Pada Komplain
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=773967425">
+                                Pelayanan IMD Pada Pasien Partus Normal Pada Bayi Sehat
                               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1544732967">
-                                Angka Kepuasan Pasien dan Keluarga                             </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=81082114">
+                              Kepatuhan Identifikasi Pasien               </a>
                             </li>
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=866342788">
-                                Kelengkapan General Concerne Setelah Mendapatkan Informasi Yang Jelas                               </a>
+                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=914875794">
+                              Kepatuhan Melakukan Visite Dokter (jam 06.00-14.00)       </a>
                             </li>
                           </ul>
                         </div>
