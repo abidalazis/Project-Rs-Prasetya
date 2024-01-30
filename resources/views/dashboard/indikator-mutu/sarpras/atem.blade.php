@@ -14,21 +14,14 @@
                       <h2>ALAT ELEKTRO MEDIK</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($atem as $item)
+                                
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=0">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=1499967359">
-                                KETEPATAN WAKTU PENGECEKAN ALAT–ALAT MEDIS YANG TERENCANAKAN
-                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1nr0V5XZEZoNGR1xnGAgrLaqYutW11h8mPCzVqlrliXc/edit#gid=2057030540">
-                                KETEPATAN WAKTU TUNGGU PERBAIKAN ALAT MEDIS OLEH PIHAK KE TIGA
-                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

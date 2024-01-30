@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\atem;
 use App\Models\laporan_it;
+use Illuminate\Http\Request;
 
 class indikatorController extends Controller
 {
@@ -22,7 +23,9 @@ class indikatorController extends Controller
     }
     public function atem()
     {
-        return view('dashboard.indikator-mutu.sarpras.atem');
+        $atem = atem::all();
+
+        return view('dashboard.indikator-mutu.sarpras.atem', compact('atem'));
     }
     public function driver()
     {

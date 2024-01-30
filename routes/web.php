@@ -1,15 +1,42 @@
 <?php
 
-use App\Http\Controllers\dashboardController;
 use App\Models\laporan;
 use App\Models\services;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItController;
+use App\Http\Controllers\OkController;
+use App\Http\Controllers\HnmController;
+use App\Http\Controllers\IcuController;
+use App\Http\Controllers\IgdController;
+use App\Http\Controllers\LabController;
+use App\Http\Controllers\Lt2Controller;
+use App\Http\Controllers\Lt4Controller;
+use App\Http\Controllers\Lt5Controller;
+use App\Http\Controllers\Lt6Controller;
+use App\Http\Controllers\SdmController;
+use App\Http\Controllers\AtemController;
+use App\Http\Controllers\CssdController;
+use App\Http\Controllers\GiziController;
 use App\Http\Controllers\merkController;
+use App\Http\Controllers\UangController;
+use App\Http\Controllers\KaberController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\RajalController;
+use App\Http\Controllers\UpsrsController;
+use App\Http\Controllers\DriverController;
+use App\Http\Controllers\LondriController;
+use App\Http\Controllers\PerinaController;
+use App\Http\Controllers\CasemixController;
+use App\Http\Controllers\FarmasiController;
+use App\Http\Controllers\KeslingController;
 use App\Http\Controllers\laporanController;
 use App\Http\Controllers\ruanganController;
+use App\Http\Controllers\SecurityController;
 use App\Http\Controllers\servicesController;
+use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\indikatorController;
+use App\Http\Controllers\RadiologiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,6 +92,35 @@ Route::get('/indikator-mutu-radiologi', [indikatorController::class,'radiologi']
 Route::get('/indikator-mutu-rehab', [indikatorController::class,'rehab'])->middleware('auth');
 Route::get('/indikator-mutu-rm', [indikatorController::class,'rm'])->middleware('auth');
 // Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan'])->middleware('auth');
+
+// Dashboard Admin
+Route::resource('tambah-atem', AtemController::class)->middleware('auth');
+Route::resource('tambah-casemix', CasemixController::class)->middleware('auth');
+Route::resource('tambah-cssd', CssdController::class)->middleware('auth');
+Route::resource('tambah-driver', DriverController::class)->middleware('auth');
+Route::resource('tambah-farmasi', FarmasiController::class)->middleware('auth');
+Route::resource('tambah-gizi', GiziController::class)->middleware('auth');
+Route::resource('tambah-hnm', HnmController::class)->middleware('auth');
+Route::resource('tambah-icu', IcuController::class)->middleware('auth');
+Route::resource('tambah-igd', IgdController::class)->middleware('auth');
+Route::resource('tambah-kaber', KaberController::class)->middleware('auth');
+Route::resource('tambah-kesling', KeslingController::class)->middleware('auth');
+Route::resource('tambah-lab', LabController::class)->middleware('auth');
+Route::resource('tambah-londri', LondriController::class)->middleware('auth');
+Route::resource('tambah-lt2', Lt2Controller::class)->middleware('auth');
+Route::resource('tambah-lt4', Lt4Controller::class)->middleware('auth');
+Route::resource('tambah-lt5', Lt5Controller::class)->middleware('auth');
+Route::resource('tambah-lt6', Lt6Controller::class)->middleware('auth');
+Route::resource('tambah-ok', OkController::class)->middleware('auth');
+Route::resource('tambah-perina', PerinaController::class)->middleware('auth');
+Route::resource('tambah-radiologi', RadiologiController::class)->middleware('auth');
+Route::resource('tambah-rajal', RajalController::class)->middleware('auth');
+Route::resource('tambah-sdm', SdmController::class)->middleware('auth');
+Route::resource('tambah-security', SecurityController::class)->middleware('auth');
+Route::resource('tambah-uang', UangController::class)->middleware('auth');
+Route::resource('tambah-upsrs', UpsrsController::class)->middleware('auth');
+
+
 
 // laporan
 Route::get('/laporan-it', function () {
