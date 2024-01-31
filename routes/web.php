@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItController;
 use App\Http\Controllers\OkController;
+use App\Http\Controllers\RmController;
 use App\Http\Controllers\HnmController;
 use App\Http\Controllers\IcuController;
 use App\Http\Controllers\IgdController;
@@ -23,6 +24,7 @@ use App\Http\Controllers\UangController;
 use App\Http\Controllers\KaberController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\RajalController;
+use App\Http\Controllers\RehabController;
 use App\Http\Controllers\UpsrsController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\LondriController;
@@ -119,6 +121,9 @@ Route::resource('tambah-sdm', SdmController::class)->middleware('auth');
 Route::resource('tambah-security', SecurityController::class)->middleware('auth');
 Route::resource('tambah-uang', UangController::class)->middleware('auth');
 Route::resource('tambah-upsrs', UpsrsController::class)->middleware('auth');
+Route::resource('tambah-it', ItController::class)->middleware('auth');
+Route::resource('tambah-rm', RmController::class)->middleware('auth');
+Route::resource('tambah-rehab', RehabController::class)->middleware('auth');
 
 
 

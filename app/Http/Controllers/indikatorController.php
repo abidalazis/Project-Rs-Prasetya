@@ -2,9 +2,37 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\it;
+use App\Models\ok;
+use App\Models\rm;
+use App\Models\hnm;
+use App\Models\icu;
+use App\Models\igd;
+use App\Models\lab;
+use App\Models\lt2;
+use App\Models\lt4;
+use App\Models\lt5;
+use App\Models\lt6;
+use App\Models\sdm;
 use App\Models\atem;
+use App\Models\cssd;
+use App\Models\gizi;
+use App\Models\uang;
+use App\Models\kaber;
+use App\Models\rajal;
+use App\Models\rehab;
+use App\Models\upsrs;
+use App\Models\driver;
+use App\Models\londri;
+use App\Models\perina;
+use App\Models\casemix;
+use App\Models\farmasi;
+use App\Models\kesling;
+use App\Models\security;
+use App\Models\radiologi;
 use App\Models\laporan_it;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class indikatorController extends Controller
 {
@@ -29,113 +57,141 @@ class indikatorController extends Controller
     }
     public function driver()
     {
-        return view('dashboard.indikator-mutu.sarpras.driver');
+        $driver = driver::all();
+
+        return view('dashboard.indikator-mutu.sarpras.driver', compact('driver'));
     }
     public function it()
     {
-        return view('dashboard.indikator-mutu.sarpras.it');
+        $it = it::all();
+        return view('dashboard.indikator-mutu.sarpras.it', compact('it'));
     }
     public function kesling()
     {
-        return view('dashboard.indikator-mutu.sarpras.kesling');
+        $kesling = kesling::all();
+        return view('dashboard.indikator-mutu.sarpras.kesling', compact('kesling'));
     }
     public function security()
     {
-        return view('dashboard.indikator-mutu.sarpras.security');
+        $security = security::all();
+        return view('dashboard.indikator-mutu.sarpras.security', compact('security'));
     }
     public function upsrs()
     {
-        return view('dashboard.indikator-mutu.sarpras.upsrs');
+        $upsrs = upsrs::all();
+        return view('dashboard.indikator-mutu.sarpras.upsrs', compact('upsrs'));
     }
     public function keuangan()
     {
-        return view('dashboard.indikator-mutu.keuangan');
+        $keuangan = uang::all();
+        return view('dashboard.indikator-mutu.keuangan', compact('keuangan'));
     }
     public function sdm()
     {
-        return view('dashboard.indikator-mutu.sdm');
+        $sdm = sdm::all();
+        return view('dashboard.indikator-mutu.sdm', compact('sdm'));
     }
     public function humas()
     {
-        return view('dashboard.indikator-mutu.humas');
+        $hnm = hnm::all();
+        return view('dashboard.indikator-mutu.humas', compact('hnm'));
     }
     public function cssd()
     {
-        return view('dashboard.indikator-mutu.perawat.cssd');
+        $cssd = cssd::all();
+        return view('dashboard.indikator-mutu.perawat.cssd', compact('cssd'));
     }
     public function icu()
     {
-        return view('dashboard.indikator-mutu.perawat.icu');
+        $icu = icu::all();
+        return view('dashboard.indikator-mutu.perawat.icu', compact('icu'));
     }
     public function igd()
     {
-        return view('dashboard.indikator-mutu.perawat.igd');
+        $igd = igd::all();
+        return view('dashboard.indikator-mutu.perawat.igd', compact('igd'));
     }
     public function kaber()
     {
-        return view('dashboard.indikator-mutu.perawat.kaber');
+        $kaber = kaber::all();
+        return view('dashboard.indikator-mutu.perawat.kaber', compact('kaber'));
     }
     public function ok()
     {
-        return view('dashboard.indikator-mutu.perawat.ok');
+        $ok = ok::all();
+        return view('dashboard.indikator-mutu.perawat.ok', compact('ok'));
     }
     public function londri()
     {
-        return view('dashboard.indikator-mutu.perawat.londri');
+        $londri = londri::all();
+        return view('dashboard.indikator-mutu.perawat.londri', compact('londri'));
     }
     public function lt2()
     {
-        return view('dashboard.indikator-mutu.perawat.lt2');
+        $lt2 = lt2::all();
+        return view('dashboard.indikator-mutu.perawat.lt2', compact('lt2'));
     }
     public function lt4()
     {
-        return view('dashboard.indikator-mutu.perawat.lt4');
+        $lt4 = lt4::all();
+        return view('dashboard.indikator-mutu.perawat.lt4', compact('lt4'));
     }
     public function lt5()
     {
-        return view('dashboard.indikator-mutu.perawat.lt5');
+        $lt5 = lt5::all();
+        return view('dashboard.indikator-mutu.perawat.lt5', compact('lt5'));
     }
     public function lt6()
     {
-        return view('dashboard.indikator-mutu.perawat.lt6');
+        $lt6 = lt6::all();
+        return view('dashboard.indikator-mutu.perawat.lt6', compact('lt6'));
     }
     public function perina()
     {
-        return view('dashboard.indikator-mutu.perawat.perina');
+        $perina = perina::all();
+        return view('dashboard.indikator-mutu.perawat.perina', compact('perina'));
     }
     public function rajal()
     {
-        return view('dashboard.indikator-mutu.perawat.rajal');
+        $rajal = rajal::all();
+        return view('dashboard.indikator-mutu.perawat.rajal', compact('rajal'));
     }
 
     //Penunjang Medis
     public function casemix()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.casemix');
+        $casemix = casemix::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.casemix', compact('casemix'));
     }
     public function farmasi()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.farmasi');
+        $farmasi = farmasi::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.farmasi', compact('farmasi'));
     }
     public function gisi()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.gisi');
+        $gizi = gizi::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.gizi', compact('gizi'));
     }
     public function lab()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.lab');
+        $lab = lab::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.lab', compact('lab'));
     }
-    public function radioogi()
+    public function radiologi()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.radioogi');
+        $radiologi = radiologi::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.radiologi', compact('radiologi'));
     }
     public function rehab()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.rehab');
+        $rehab = rehab::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.rehab', compact('rehab'));
     }
     public function rm()
     {
-        return view('dashboard.indikator-mutu.penunjang-medis.rm');
+        $rm = rm::all();
+        return view('dashboard.indikator-mutu.penunjang-medis.rm', compact('rm'));
     }
     
 
