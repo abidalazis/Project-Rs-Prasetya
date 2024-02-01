@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard-admin.layouts.main')
 @section('content')
     <div class="container-fluid px-4">
         <h1 class="h2">{{ $tittle }}</h1>
@@ -9,7 +9,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
-                        <form action="/tambah-kesling/ {{ $kesling->id }}" method='post'>
+                        <form action="/tambah-farmasi/ {{ $farmasi->id }}" method='post'>
                             @csrf
 
                             @method('PUT')
@@ -19,18 +19,18 @@
                                     <label for="nama_form" class="col-sm-2 col-form-label">Nama form</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control"
-                                            name='nama_form'value="{{ $kesling->nama_form }}" id="nama_form">
+                                            name='nama_form'value="{{ $farmasi->nama_form }}" id="nama_form">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label for="link" class="col-sm-2 col-form-label">link</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='link'value="{{ $kesling->link }}"
+                                        <input type="text" class="form-control" name='link'value="{{ $farmasi->link }}"
                                             id="link">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="kesling" class="col-sm-2 col-form-label"></label>
+                                    <label for="farmasi" class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-10"><button type="submit" class="btn btn-primary"
                                             name="submit">SIMPAN</button></div>
                                 </div>

@@ -8,7 +8,7 @@
                     Dashboard
                 </a>
                 
-                <a class="nav-link" href="/indikator-mutu">
+                <a class="nav-link" href="/indikator-,utu">
                     <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                     Indikator Mutu
                 </a>
@@ -20,12 +20,12 @@
                 </a>
                 <div class="collapse" id="collapseSarpras" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/indikator-mutu-atem">ALAT ELEKTROMEDIK</a>
-                        <a class="nav-link" href="/indikator-mutu-it">INFORMASI DAN TEKNOLOGI</a>
-                        <a class="nav-link" href="/indikator-mutu-kesling">KESEHATAN LINGKUNGAN</a>
-                        <a class="nav-link" href="/indikator-mutu-security">SECURITY</a>
-                        <a class="nav-link" href="/indikator-mutu-driver">DRIVER</a>
-                        <a class="nav-link" href="/indikator-mutu-upsrs">UPSRS</a>
+                        <a class="nav-link" href="/tambah-atem">ALAT ELEKTROMEDIK</a>
+                        <a class="nav-link" href="/tambah-it">INFORMASI DAN TEKNOLOGI</a>
+                        <a class="nav-link" href="/tambah-kesling">KESEHATAN LINGKUNGAN</a>
+                        <a class="nav-link" href="/tambah-security">SECURITY</a>
+                        <a class="nav-link" href="/tambah-driver">DRIVER</a>
+                        <a class="nav-link" href="/tambah-upsrs">UPSRS</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUang" aria-expanded="false" aria-controls="collapseUang">
@@ -35,18 +35,18 @@
                 </a>
                 <div class="collapse" id="collapseUang" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <li><a class="nav-link" href="/indikator-mutu-cssd">CSSD</a>
-                            <a class="nav-link" href="/indikator-mutu-icu">ICU</a>
-                            <a class="nav-link" href="/indikator-mutu-igd">IGD</a>
-                            <a class="nav-link" href="/indikator-mutu-kaber">KAMAR BERSALIN - NIFAS</a>
-                            <a class="nav-link" href="/indikator-mutu-ok">KAMAR OPERASI</a>
-                            <a class="nav-link" href="/indikator-mutu-londri">LAUNDRY</a>
-                            <a class="nav-link" href="/indikator-mutu-lt2">LANTAI 2</a>
-                            <a class="nav-link" href="/indikator-mutu-lt4">LANTAI 4</a>
-                            <a class="nav-link" href="/indikator-mutu-lt5">LANTAI 5</a>
-                            <a class="nav-link" href="/indikator-mutu-lt6">LANTAI 6</a>
-                            <a class="nav-link" href="/indikator-mutu-perina">PERINATOLOGI</a>
-                            <a class="nav-link" href="/indikator-mutu-rajal">RAWAT JALAN</a>
+                        <li><a class="nav-link" href="/tambah-cssd">CSSD</a>
+                            <a class="nav-link" href="/tambah-icu">ICU</a>
+                            <a class="nav-link" href="/tambah-igd">IGD</a>
+                            <a class="nav-link" href="/tambah-kaber">KAMAR BERSALIN - NIFAS</a>
+                            <a class="nav-link" href="/tambah-ok">KAMAR OPERASI</a>
+                            <a class="nav-link" href="/tambah-londri">LAUNDRY</a>
+                            <a class="nav-link" href="/tambah-lt2">LANTAI 2</a>
+                            <a class="nav-link" href="/tambah-lt4">LANTAI 4</a>
+                            <a class="nav-link" href="/tambah-lt5">LANTAI 5</a>
+                            <a class="nav-link" href="/tambah-lt6">LANTAI 6</a>
+                            <a class="nav-link" href="/tambah-perina">PERINATOLOGI</a>
+                            <a class="nav-link" href="/tambah-rajal">RAWAT JALAN</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsenunjang" aria-expanded="false" aria-controls="collapsenunjang">
@@ -56,24 +56,24 @@
                 </a>
                 <div class="collapse" id="collapsenunjang" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <li><a class="nav-link" href="/indikator-mutu-casemix">Casemix</a>
-                            <a class="nav-link" href="/indikator-mutu-farmasi">Farmasi</a>
-                            <a class="nav-link" href="/indikator-mutu-gizi">Gizi</a>
-                            <a class="nav-link" href="/indikator-mutu-lab">Laboratorium</a>
-                            <a class="nav-link" href="/indikator-mutu-radiologi">Radiologi</a>
-                            <a class="nav-link" href="/indikator-mutu-rehab">Rehabilitas Medik</a>
-                            <a class="nav-link" href="/indikator-mutu-rm">Rekam Medik</a>
+                        <li><a class="nav-link" href="/tambah-casemix">Casemix</a>
+                            <a class="nav-link" href="/tambah-farmasi">Farmasi</a>
+                            <a class="nav-link" href="/tambah-gizi">Gizi</a>
+                            <a class="nav-link" href="/tambah-lab">Laboratorium</a>
+                            <a class="nav-link" href="/tambah-radiologi">Radiologi</a>
+                            <a class="nav-link" href="/tambah-rehab">Rehabilitas Medik</a>
+                            <a class="nav-link" href="/tambah-rm">Rekam Medik</a>
                     </nav>
                 </div>
-                <a class="nav-link" href="/indikator-mutu-keuangan">
+                <a class="nav-link" href="/tambah-uang">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Keuangan
                 </a>
-                <a class="nav-link"  href="/indikator-mutu-sdm">
+                <a class="nav-link"  href="/tambah-sdm">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Sumber Daya Manusia
                 </a>
-                <a class="nav-link"  href="/indikator-mutu-humas">
+                <a class="nav-link"  href="/tambah-hnm">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Bagian Hubungan Masyarakat dan Martketing
                 </a>

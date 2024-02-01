@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard-admin.layouts.main')
 @section('content')
 @include('dashboard.layouts.pesan')
 <div class="container-fluid px-4">

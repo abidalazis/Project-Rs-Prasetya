@@ -16,9 +16,9 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Abidal Azis',
-            'email' => 'abidal@admin.com',
+            'email' => 'form@im.com',
             'password' => bcrypt('admin'),
             'email_verified_at' => now()
-        ]);
+        ],);
     }
 }

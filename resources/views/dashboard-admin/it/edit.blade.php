@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard-admin.layouts.main')
 @section('content')
     <div class="container-fluid px-4">
         <h1 class="h2">Edit it</h1>
