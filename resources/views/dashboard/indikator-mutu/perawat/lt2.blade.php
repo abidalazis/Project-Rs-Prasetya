@@ -14,23 +14,13 @@
                       <h2>Lantai 2</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($lt2 as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Wtz_p5bV-QqBEvbBwBtA8lXfFQtQi23javgCey40EPM/edit#gid=0">
-                              Kepatuhan Prinsip Benar Obat Pada Pemberian Obat High Alert Insulin Untuk Pasien Diabetes Melitus
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Wtz_p5bV-QqBEvbBwBtA8lXfFQtQi23javgCey40EPM/edit#gid=1998747091">
-                              Kepatuhan Upaya Pencegahan Asesmen Resiko Jatuh Tinggi                         </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Wtz_p5bV-QqBEvbBwBtA8lXfFQtQi23javgCey40EPM/edit#gid=1862738266">
-                              Kepatuhan Identifikasi Pasien                       </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Wtz_p5bV-QqBEvbBwBtA8lXfFQtQi23javgCey40EPM/edit#gid=2029059700">
-                              Kepatuhan Melakukan Visite Dokter (jam 06.00-14.00)            </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

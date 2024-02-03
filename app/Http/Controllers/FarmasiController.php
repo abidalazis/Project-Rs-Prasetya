@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\casemix;
+use App\Models\farmasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -15,10 +15,10 @@ class FarmasiController extends Controller
      */
     public function index(Request $request)
     {
-        $data = casemix::all();
+        $data = farmasi::all();
         // $tittle = 'tittle';
-        return view('dashboard-admin.casemix.index',[
-            "tittle" => "Casemix"
+        return view('dashboard-admin.farmasi.index',[
+            "tittle" => "farmasi"
             ], compact('data'));
     }
 
@@ -29,8 +29,8 @@ class FarmasiController extends Controller
      */
     public function create()
     {
-        return view('dashboard-admin.casemix.create',[
-            "tittle" => "tambah-tambah-casemix"
+        return view('dashboard-admin.farmasi.create',[
+            "tittle" => "tambah-tambah-farmasi"
             ]);
     }
 
@@ -57,8 +57,8 @@ class FarmasiController extends Controller
             'link'=>$request->link,
 
         ];
-        casemix::create($data);
-        return redirect()->to('tambah-casemix')->with('success','Berhasil Menambahkan Data');
+        farmasi::create($data);
+        return redirect()->to('tambah-farmasi')->with('success','Berhasil Menambahkan Data');
     }
 
     /**
@@ -80,10 +80,10 @@ class FarmasiController extends Controller
      */
     public function edit($id)
     {
-        $data = casemix::where('id',$id)->first();
-        return view('dashboard-admin.casemix.edit',[
-            "tittle" => "tambah-tambah-casemix"
-            ])->with('casemix',$data);
+        $data = farmasi::where('id',$id)->first();
+        return view('dashboard-admin.farmasi.edit',[
+            "tittle" => "tambah-tambah-farmasi"
+            ])->with('farmasi',$data);
     }
 
     /**
@@ -93,7 +93,7 @@ class FarmasiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, casemix $casemix, $id)
+    public function update(Request $request, farmasi $farmasi, $id)
     {
         $request->validate([
             'nama_form'=>'required',
@@ -107,8 +107,8 @@ class FarmasiController extends Controller
             'link'=>$request->link,
 
         ];
-        casemix::where('id',$id)->update($data);
-        return redirect()->to('tambah-casemix')->with('success','Berhasil Mengedit Data');
+        farmasi::where('id',$id)->update($data);
+        return redirect()->to('tambah-farmasi')->with('success','Berhasil Mengedit Data');
     }
     
 
@@ -120,7 +120,7 @@ class FarmasiController extends Controller
      */
     public function destroy($id)
     {
-        casemix::where('id', $id)->delete();
-        return redirect()->to('tambah-casemix')->with('success','Berhasil Menghapus Data');
+        farmasi::where('id', $id)->delete();
+        return redirect()->to('tambah-farmasi')->with('success','Berhasil Menghapus Data');
     }
 }

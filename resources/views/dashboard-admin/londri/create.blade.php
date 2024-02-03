@@ -9,7 +9,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
-                        <form action='{{ url('tambah-londry') }}' method='post'>
+                        <form action='{{ url('tambah-londri') }}' method='post'>
                             @csrf
                             <div class="my-3 p-3 bg-body rounded shadow-sm">
                                 <div class="mb-3 row">

@@ -168,7 +168,7 @@ class indikatorController extends Controller
         $farmasi = farmasi::all();
         return view('dashboard.indikator-mutu.penunjang-medis.farmasi', compact('farmasi'));
     }
-    public function gisi()
+    public function gizi()
     {
         $gizi = gizi::all();
         return view('dashboard.indikator-mutu.penunjang-medis.gizi', compact('gizi'));

@@ -13,20 +13,15 @@
                 <div class="row align">
                       <h2>Laboratorium</h2>
                         <div class="col">
-                          <ul>
+                          <ul> 
+                             @foreach ($lab as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=0">
-                              Pelaporan Nilai Kritis Hasil Pemeriksaan Laboratorium < 30 Menit
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=1010761211">
-                              Tidak Adanya Kejadian Penundaan / Gagal Pemeriksaan Jaringan PA / Kultur Push Karena Sampel Hilang                    </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/14VLBey-okEPzcoDae7Vcu__kRiTsjV22E6SAFCynzSA/edit#gid=2058976793">
-                              Kesesuain Identifikasi Produk Darah Denah Lembar Permintaan               </a>
-                            </li>
+                            @endforeach
+                          </ul>
                           </ul>
                         </div>
                     </div>

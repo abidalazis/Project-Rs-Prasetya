@@ -14,23 +14,13 @@
                       <h2>ICU</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($icu as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1kH3kHbSxajuM7G8pPKlZnJTL27_TpMv6uTn11drdoX8/edit#gid=42204670">
-                              Kepatuhan Upaya Pencegahan Asesmen Resiko Jatuh Tinggi
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1kH3kHbSxajuM7G8pPKlZnJTL27_TpMv6uTn11drdoX8/edit#gid=604250722">
-                              Kepatuhan Melakukan Visite Dokter (jam 6.00-14.00)              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1kH3kHbSxajuM7G8pPKlZnJTL27_TpMv6uTn11drdoX8/edit#gid=2147469093">
-                              Ketepatan Pemindahan Pasien ICU Sesuai Kriteria Keluar Masuk                       </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1kH3kHbSxajuM7G8pPKlZnJTL27_TpMv6uTn11drdoX8/edit#gid=24315257">
-                              Kepatuhan Identifikasi Pasien                        </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

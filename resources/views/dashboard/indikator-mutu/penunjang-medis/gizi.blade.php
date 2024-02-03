@@ -14,15 +14,14 @@
                       <h2>Gizi</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($gizi as $item)
+                                
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/192k3V_Tv-jsUUIOsPzRoXAf9eGIVgiok0fZfy_8SyFY/edit#gid=1732712903">
-                              Kepatuhan Identifikasi Pasien 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/192k3V_Tv-jsUUIOsPzRoXAf9eGIVgiok0fZfy_8SyFY/edit#gid=955481609">
-                              ANGKA KELENGKAPAN PENGKAJIAN GIZI DALAM 2X24 JAM UNTUK PASIEN BARU                  </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

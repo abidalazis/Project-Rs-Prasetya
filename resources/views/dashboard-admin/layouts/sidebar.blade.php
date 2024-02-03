@@ -2,17 +2,11 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="/">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
-                </a>
-                
-                <a class="nav-link" href="/indikator-,utu">
+                <a class="nav-link" href="/dashboard-im">
                     <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                     Indikator Mutu
                 </a>
-                <div class="sb-sidenav-menu-heading">INDIKATOR MUTU</div>
+                <div class="sb-sidenav-menu-heading">ADMIN INDIKATOR MUTU</div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSarpras" aria-expanded="false" aria-controls="collapseSarpras">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     TU DAN SARPRAS

@@ -14,11 +14,13 @@
                       <h2></h2>
                         <div class="col">
                           <ul>
+                            @foreach ($londri as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1g7AzUnD8dUxoxdLjfJMQXf1RDP-rspr4yrSrdpbSSak/edit#gid=0">
-                              Angka Kejadian pemakaian linen tidak sesui unit
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

@@ -14,23 +14,13 @@
                       <h2>RAJAL</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($rajal as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1DzfeZEUmx0zQO54mEKmwJnfOuNmestAsNBCmx5GfO1o/edit#gid=0">
-                                Waktu Tunggu Pasien Rawat Jalan < 60 Menit Yang Diobservasi 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href=https://docs.google.com/spreadsheets/d/1DzfeZEUmx0zQO54mEKmwJnfOuNmestAsNBCmx5GfO1o/edit#gid=1192729498">
-                                Kepatuhan Pelaksanaan Antrian Online Sesuai Peraturan BPJS                    </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1DzfeZEUmx0zQO54mEKmwJnfOuNmestAsNBCmx5GfO1o/edit#gid=183439423">
-                                Angka Pemberitahuan Secara Lisan/Tertulis Penundaan Parktek Dokter Spesialis yang Diberitahukan H-3 Sebelum Jadwal Poli                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1DzfeZEUmx0zQO54mEKmwJnfOuNmestAsNBCmx5GfO1o/edit#gid=1825497305">
-                                Kepatuhan Dokter Spesialis Dalam Memberikan Inform Concent Tentang Operasi Elektif di Poli Bedah                      </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

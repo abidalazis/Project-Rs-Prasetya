@@ -14,15 +14,13 @@
                       <h2>Rehabilitasi Medik</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($rehab as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1DyIPRA4kE4_OUAskh8pmbWof8XU7TYbQPLBjiK-12V8/edit#gid=0">
-                              Kejadian Drop Out Pasien Terhadap Pelayanan Rehabilitasi Medik Yang Direncanakan
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1DyIPRA4kE4_OUAskh8pmbWof8XU7TYbQPLBjiK-12V8/edit#gid=968076801">
-                              Waktu Tunggu Pelayanan Rehabilitasi Medik di Rawat Jalan Maksimal 30 Menit           </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

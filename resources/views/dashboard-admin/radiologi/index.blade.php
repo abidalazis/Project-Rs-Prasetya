@@ -2,10 +2,10 @@
 @section('content')
 @include('dashboard.layouts.pesan')
 <div class="container-fluid px-4">
-    <h1 class="mt-4">{{ $tittle }}</h1>
+    <h1 class="mt-4">radiologi</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-        <li class="breadcrumb-item active">{{ $tittle }}</li>
+        <li class="breadcrumb-item"><a href="/dashboard-im">Dashboard</a></li>
+        <li class="breadcrumb-item active">radiologi</li>
     </ol>
     <div class="card mb-4">
         <div class="card-header">
@@ -13,7 +13,7 @@
             DataTable Example
         </div>
         <div class="card-body">
-            <a href="{{ route('tambah-londry.create') }}" class="btn btn-primary">Tambah</a>
+            <a href="{{ route('tambah-radiologi.create') }}" class="btn btn-primary">Tambah</a>
             <table id="datatablesSimple">
                 <thead>
                     <tr>
@@ -30,9 +30,9 @@
                             <td>{{ $item->nama_form }}</td>
                             <td>{{ $item->link }}</td>
                             <td>
-                                <a href="/tambah-londry/ {{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="/tambah-radiologi/ {{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
                                 <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline"
-                                    action="/tambah-londry/ {{ $item->id }}" method="post">
+                                    action="/tambah-radiologi/ {{ $item->id }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>

@@ -14,15 +14,13 @@
                       <h2>RM</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($rm as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1OweSl-2Nf2JWxsTKiUqqtevSBdsju2U2t6BgPVRQgzM/edit#gid=0">
-                              Kelengkapan Pengisian Rekam Medik 24 Jam Setelah Selesai Pelayanan			
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1OweSl-2Nf2JWxsTKiUqqtevSBdsju2U2t6BgPVRQgzM/edit#gid=30710789">
-                              Kelengkapan Pengisian Resume Pasien Pulang         </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

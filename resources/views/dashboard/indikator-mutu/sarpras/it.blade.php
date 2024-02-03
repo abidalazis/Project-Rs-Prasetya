@@ -14,21 +14,13 @@
                       <h2>IT</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($it as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=0">
-                                KETEPATAN WAKTU PERBAIKAN SOFWARE DAN HADWARE YANG TERENCANAKAN 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=8169519">
-                                KEPATUHAN PENGUNAAN APLIKASI SIMRS  
-                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Hbk7Id9sjkfu-05Q_NpDjwGg-gxh2Xu4VU-bfeeNCOc/edit#gid=1925125261">
-                                LAPORAN KETEPATAN WAKTU PERBAIKAN SOFWARE DAN HADWARE YANG TERENCANAKAN 
-                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

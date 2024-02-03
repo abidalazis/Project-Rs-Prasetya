@@ -13,7 +13,7 @@
             DataTable Example
         </div>
         <div class="card-body">
-            <a href="{{ route('tambah-security.create') }}" class="btn btn-primary">Tambah</a>
+            <a href="{{ route('tambah-londri.create') }}" class="btn btn-primary">Tambah</a>
             <table id="datatablesSimple">
                 <thead>
                     <tr>
@@ -30,9 +30,9 @@
                             <td>{{ $item->nama_form }}</td>
                             <td>{{ $item->link }}</td>
                             <td>
-                                <a href="/tambah-security/ {{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="/tambah-londri/ {{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
                                 <form onsubmit="return confirm('YAKIN AKAN MENGHAPUS?')" class="d-inline"
-                                    action="/tambah-security/ {{ $item->id }}" method="post">
+                                    action="/tambah-londri/ {{ $item->id }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button>

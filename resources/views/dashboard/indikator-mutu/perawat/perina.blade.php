@@ -14,19 +14,13 @@
                       <h2>Perinatlogi</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($perina as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=773967425">
-                                Pelayanan IMD Pada Pasien Partus Normal Pada Bayi Sehat
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=81082114">
-                              Kepatuhan Identifikasi Pasien               </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1IO8zld6Lqzkt1FheZZ4mRWOewRbkARn6-INGj7FUbZs/edit#gid=914875794">
-                              Kepatuhan Melakukan Visite Dokter (jam 06.00-14.00)       </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

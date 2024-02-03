@@ -14,16 +14,13 @@
                       <h2>DRIVER</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($driver as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/155lN1_lDyEcZrAyQdXdQ-HhHbtskCxEA55d1ZYz39bM/edit#gid=0">
-                                KEPATUHAN MAINTENANCE AMBULAN SESUAI JADWAL YANG DIRENCANAKAN
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/155lN1_lDyEcZrAyQdXdQ-HhHbtskCxEA55d1ZYz39bM/edit#gid=192902590">
-                               LAPORAN KEPATUHAN MAINTENANCE AMBULAN SESUAI JADWAL YANG DIRENCANAKAN
-                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

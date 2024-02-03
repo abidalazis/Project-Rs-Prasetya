@@ -14,19 +14,13 @@
                       <h2>Sumber Daya Manusia</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($sdm as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RmbCowD2mBSPFCb8AaQpTaYsvzC8NbMI6X2cjQ2CNa8/edit#gid=0">
-                                Kepatuhan Penyusunan Laporan Kontrak Kerja Dan Kontrak Klinis Per Semester             
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RmbCowD2mBSPFCb8AaQpTaYsvzC8NbMI6X2cjQ2CNa8/edit#gid=85935057">
-                                Kepatuhan Pelaksanaan In House Training Wajib Bagi Seluruh Karyawan Per Semester                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RmbCowD2mBSPFCb8AaQpTaYsvzC8NbMI6X2cjQ2CNa8/edit#gid=752680759">
-                                Laporan                               </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

@@ -14,36 +14,14 @@
                       <h2>Farmasi</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($farmasi as $item)
+                                
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=899598027">
-                              Waktu Tunggu Pelayanan Obat  Jadi < 30 Menit
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=0">
-                              Waktu Tunggu Pelayanan Obat  Racikan < 60 Menit  </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=724827419">
-                              Kepatuhan Penggunaan Fornas        </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=1989308335">
-                              Kepatuhan Pelaksanaan Antrian Obat Online Sesuai Peraturan BPJS
-                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=2105180210">
-                              Angka Kelengkapan Obat Untuk Pasien Kronis                   </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=271601253">
-                              Obat High Alert Berlabel                     </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1zhlC8vClFXQMkzp79ZL5t7nzyoxHgy_BCOy9HjOfGhM/edit#gid=22218573">
-                              Angka Kelengkapan Pengkajian Apoteker dalam 2 X 24 Jam Untuk Pasien Baru, Identifikasi Masalah dan Keamanan Penggunaan Obat dalam Lembar Catatan Perkembangan Pasien CPPT		          </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

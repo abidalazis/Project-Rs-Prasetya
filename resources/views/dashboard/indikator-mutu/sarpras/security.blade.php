@@ -14,16 +14,13 @@
                       <h2>SECURITY</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($security as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Pp-idnezReZ3EdrvGpfkercomikadQ6sf8IpJjqAeMs/edit#gid=0">
-                                KEPATUHAN MENJALANKAN PATROLI KELILING UNTUK SCURITI PADA JADWAL YANG DIRENCANAKAN 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1Pp-idnezReZ3EdrvGpfkercomikadQ6sf8IpJjqAeMs/edit#gid=1305935836">
-                               LAPORAN KEPATUHAN MENJALANKAN PATROLI KELILING UNTUK SCURITI PADA JADWAL YANG DIRENCANAKAN 
-                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

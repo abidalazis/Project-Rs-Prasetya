@@ -14,15 +14,13 @@
                       <h2>Radiologi</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($radiologi as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1K2oGHlWxowjQkj7sfToBwdYmjF0MA5sfqkwTIGmKeCo/edit#gid=0">
-                              Kepatuhan Ketepatan Pengecekan / Persiapan Alat Foto Rontgen 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1K2oGHlWxowjQkj7sfToBwdYmjF0MA5sfqkwTIGmKeCo/edit#gid=1982633072">
-                              Waktu Tunggu USG Cyto Pada Layanan Intern Dokter Radiologi < 6 Jam                     </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

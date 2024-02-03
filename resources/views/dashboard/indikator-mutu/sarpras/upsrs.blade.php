@@ -14,21 +14,13 @@
                       <h2>UPSR</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($upsrs as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=0">
-                                Ketepatan Waktu Pemeliharaan AC
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=9452882">
-                                Ketepatan Waktu Pengecekan APAR dan Hydrant Yang Terencanakan
-                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1NyZtkh9xGACiAgsQU948jQkIeTVrxtrAopiMYQlQf_Q/edit#gid=1630863249">
-                                ketepatan waktu pemeliharaan AC
-                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

@@ -14,18 +14,13 @@
                       <h2>Keuangan</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($keuangan as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RbsNZp3i2fE4VPIuw4L_CJyVsXNy3VTvbnnVeZQ-kss/edit#gid=0">
-                                Penanganan Secara Tepat Pada Pelanggan Umum Gagal Bayar, Deposit Awal Tidak Sesuai Kebijakan Dan Peralihan Jaminan                              </a>
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
+                              </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RbsNZp3i2fE4VPIuw4L_CJyVsXNy3VTvbnnVeZQ-kss/edit#gid=1158469462">
-                                Ketepatan waktu pemberian informasi tagihan kepada pasien umum                              </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1RbsNZp3i2fE4VPIuw4L_CJyVsXNy3VTvbnnVeZQ-kss/edit#gid=1884406251">
-                                Laporan Penanganan Secara Tepat Pada Pelanggan Umum Gagal Bayar, Deposit Awal Tidak Sesuai Kebijakan Dan Peralihan Jaminan                              </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

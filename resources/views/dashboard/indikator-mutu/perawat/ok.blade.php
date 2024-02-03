@@ -14,19 +14,13 @@
                       <h2></h2>
                         <div class="col">
                           <ul>
+                            @foreach ($ok as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1GOFhYbnmO0vrUg3spY6KPU-HMSwZCI8vhJZ8FqpHH28/edit#gid=0">
-                              Kepatuhan Pengecekan / Persiapan Alat Anestesi Sebelum Dilakukan Tindakan Anestesi 
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1GOFhYbnmO0vrUg3spY6KPU-HMSwZCI8vhJZ8FqpHH28/edit#gid=252498528">
-                              Kepatuhan Pemberian Penjelasan Secara Lisan Bagaimana Teknik Anestesi Yang Digunakan Pada Pasien Yang Menjalani Operasi di Ruang Persiapan               </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1GOFhYbnmO0vrUg3spY6KPU-HMSwZCI8vhJZ8FqpHH28/edit#gid=952683285">
-                              Kepatuhan Pemberian Tanda Area Operasi Pada Lembar Rekam Medis Operasi       </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>

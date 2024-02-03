@@ -11,16 +11,16 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      <h2>KESEHATAN LINGKUNGAN</h2>
+                      <h2>IGD</h2>
                         <div class="col">
                           <ul>
-                            @foreach ($kesling as $item)
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
-                                {{ $item->nama_form }}
-                              </a>
-                            </li>
-                            @endforeach
+                            @foreach ($igd as $item)
+                              <li >
+                                <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                  {{ $item->nama_form }}
+                                </a>
+                              </li>
+                              @endforeach
                           </ul>
                         </div>
                     </div>

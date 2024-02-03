@@ -14,19 +14,13 @@
                       <h2>HUMAS MARKETING</h2>
                         <div class="col">
                           <ul>
+                            @foreach ($hnm as $item)
                             <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1271780149">
-                                Kecepatan Respon Pada Komplain
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
                               </a>
                             </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=1544732967">
-                                Angka Kepuasan Pasien dan Keluarga                             </a>
-                            </li>
-                            <li >
-                              <a target="_blank" style="text-decoration: none;" href="https://docs.google.com/spreadsheets/d/1seYmwsfzrZwUdvE94Y2G6QRdwXmLTHkvno8DIZnG7vQ/edit#gid=866342788">
-                                Kelengkapan General Concerne Setelah Mendapatkan Informasi Yang Jelas                               </a>
-                            </li>
+                            @endforeach
                           </ul>
                         </div>
                     </div>
