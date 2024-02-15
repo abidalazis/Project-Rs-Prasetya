@@ -11,7 +11,19 @@
             <div class="card-body">
               <div class="container">
                 <div class="row align">
-                      
+                      <h2>Hand</h2>
+                        <div class="col">
+                          <ul>
+                            @foreach ($hand as $item)
+                            <li >
+                              <a target="_blank" style="text-decoration: none;" href="{{ $item->link }}">
+                                {{ $item->nama_form }}
+                              </a>
+                            </li>
+                            @endforeach
+                          </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

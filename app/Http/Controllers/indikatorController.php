@@ -17,7 +17,9 @@ use App\Models\sdm;
 use App\Models\atem;
 use App\Models\cssd;
 use App\Models\gizi;
+use App\Models\hand;
 use App\Models\uang;
+use App\Models\audit;
 use App\Models\kaber;
 use App\Models\rajal;
 use App\Models\rehab;
@@ -30,7 +32,10 @@ use App\Models\farmasi;
 use App\Models\kesling;
 use App\Models\security;
 use App\Models\radiologi;
+use App\Models\supervisi;
 use App\Models\laporan_it;
+use App\Models\surveilans;
+use App\Models\surveilansok;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -192,6 +197,31 @@ class indikatorController extends Controller
     {
         $rm = rm::all();
         return view('dashboard.indikator-mutu.penunjang-medis.rm', compact('rm'));
+    }
+    public function surveilans()
+    {
+        $surveilans = surveilans::all();
+        return view('dashboard.indikator-mutu.ppi.surveilans', compact('surveilans'));
+    }
+    public function audit()
+    {
+        $audit = audit::all();
+        return view('dashboard.indikator-mutu.ppi.audit', compact('audit'));
+    }
+    public function hand()
+    {
+        $hand = hand::all();
+        return view('dashboard.indikator-mutu.ppi.hand', compact('hand'));
+    }
+    public function surveilansok()
+    {
+        $surveilansok = surveilansok::all();
+        return view('dashboard.indikator-mutu.ppi.surveilansok', compact('surveilansok'));
+    }
+    public function supervisi()
+    {
+        $supervisi = supervisi::all();
+        return view('dashboard.indikator-mutu.ppi.supervisi', compact('supervisi'));
     }
     
 

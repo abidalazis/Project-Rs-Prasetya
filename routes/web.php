@@ -19,8 +19,10 @@ use App\Http\Controllers\SdmController;
 use App\Http\Controllers\AtemController;
 use App\Http\Controllers\CssdController;
 use App\Http\Controllers\GiziController;
+use App\Http\Controllers\HandController;
 use App\Http\Controllers\merkController;
 use App\Http\Controllers\UangController;
+use App\Http\Controllers\AuditController;
 use App\Http\Controllers\KaberController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\RajalController;
@@ -39,6 +41,9 @@ use App\Http\Controllers\servicesController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\indikatorController;
 use App\Http\Controllers\RadiologiController;
+use App\Http\Controllers\SupervisiController;
+use App\Http\Controllers\SurveilansController;
+use App\Http\Controllers\SurveilansOkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,6 +99,11 @@ Route::get('/indikator-mutu-radiologi', [indikatorController::class,'radiologi']
 Route::get('/indikator-mutu-rehab', [indikatorController::class,'rehab'])->middleware('auth');
 Route::get('/indikator-mutu-rm', [indikatorController::class,'rm'])->middleware('auth');
 Route::get('/indikator-mutu-rajal', [indikatorController::class,'rajal'])->middleware('auth');
+Route::get('/indikator-mutu-hand', [indikatorController::class,'hand'])->middleware('auth');
+Route::get('/indikator-mutu-surveilans', [indikatorController::class,'surveilans'])->middleware('auth');
+Route::get('/indikator-mutu-surveilansok', [indikatorController::class,'surveilansok'])->middleware('auth');
+Route::get('/indikator-mutu-supervisi', [indikatorController::class,'supervisi'])->middleware('auth');
+Route::get('/indikator-mutu-audit', [indikatorController::class,'audit'])->middleware('auth');
 // Route::get('/indikator-mutu-atem/dashboard', [indikatorController::class,'dashboard_laporan'])->middleware('auth');
 
 // Dashboard Admin
@@ -128,6 +138,11 @@ Route::resource('tambah-upsrs', UpsrsController::class)->middleware('auth');
 Route::resource('tambah-it', ItController::class)->middleware('auth');
 Route::resource('tambah-rm', RmController::class)->middleware('auth');
 Route::resource('tambah-rehab', RehabController::class)->middleware('auth');
+Route::resource('tambah-surveilans', SurveilansController::class)->middleware('auth');
+Route::resource('tambah-surveilansok', SurveilansOkController::class)->middleware('auth');
+Route::resource('tambah-audit', AuditController::class)->middleware('auth');
+Route::resource('tambah-hand', HandController::class)->middleware('auth');
+Route::resource('tambah-supervisi', SupervisiController::class)->middleware('auth');
 
 
 
